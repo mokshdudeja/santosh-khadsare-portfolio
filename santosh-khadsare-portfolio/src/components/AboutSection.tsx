@@ -1,18 +1,18 @@
 export function AboutSection() {
   return (
-    <section id="about" className="py-20 lg:py-32 bg-surface-near-black">
+    <section id="about" className="py-20 lg:py-32 bg-zinc-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Content */}
           <div className="lg:col-span-7 space-y-8">
             <div className="space-y-4">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-100">
                 About Dr. Khadsare
               </h2>
               <div className="w-24 h-1 bg-accent-primary"></div>
             </div>
 
-            <div className="space-y-6 text-lg text-text-secondary leading-relaxed">
+            <div className="space-y-6 text-lg text-zinc-400 leading-relaxed">
               <p>
                 Dr. Khadsare's career reflects a deep, sustained focus on cyber security and DFIR—disciplines 
                 where operational precision, chain-of-custody discipline, and reproducible methodologies are 
@@ -38,14 +38,14 @@ export function AboutSection() {
 
             {/* Core Themes */}
             <div className="space-y-6">
-              <h3 className="text-xl font-semibold text-text-primary">Core Themes</h3>
+              <h3 className="text-xl font-semibold text-zinc-100">Core Themes</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="space-y-3">
                   <div className="w-12 h-12 bg-accent-primary/10 rounded-lg flex items-center justify-center">
                     <div className="w-6 h-6 bg-accent-primary rounded"></div>
                   </div>
-                  <h4 className="font-semibold text-text-primary">Operational Rigor</h4>
-                  <p className="text-text-tertiary text-sm">
+                  <h4 className="font-semibold text-zinc-100">Operational Rigor</h4>
+                  <p className="text-zinc-500 text-sm">
                     Military-grade discipline in operations, evidence handling, and crisis management
                   </p>
                 </div>
@@ -54,8 +54,8 @@ export function AboutSection() {
                   <div className="w-12 h-12 bg-accent-primary/10 rounded-lg flex items-center justify-center">
                     <div className="w-6 h-6 bg-accent-primary rounded-full"></div>
                   </div>
-                  <h4 className="font-semibold text-text-primary">Capability Building</h4>
-                  <p className="text-text-tertiary text-sm">
+                  <h4 className="font-semibold text-zinc-100">Capability Building</h4>
+                  <p className="text-zinc-500 text-sm">
                     Developing talent pipelines through mentorship, training, and institutional frameworks
                   </p>
                 </div>
@@ -64,8 +64,8 @@ export function AboutSection() {
                   <div className="w-12 h-12 bg-accent-primary/10 rounded-lg flex items-center justify-center">
                     <div className="w-6 h-6 border-2 border-accent-primary"></div>
                   </div>
-                  <h4 className="font-semibold text-text-primary">Ecosystem Development</h4>
-                  <p className="text-text-tertiary text-sm">
+                  <h4 className="font-semibold text-zinc-100">Ecosystem Development</h4>
+                  <p className="text-zinc-500 text-sm">
                     Creating sustainable indigenous capabilities and standard operating procedures
                   </p>
                 </div>
@@ -76,7 +76,7 @@ export function AboutSection() {
           {/* Image */}
           <div className="lg:col-span-5">
             <div className="relative">
-              <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-border-subtle shadow-card-hover">
+              <div className="aspect-[4/5] rounded-2xl overflow-hidden border border-white/10 shadow-lg-hover">
                 <img 
                   src="/images/IMG-20251012-WA0067.jpg" 
                   alt="Dr. Khadsare at CERT-In office"
@@ -84,10 +84,10 @@ export function AboutSection() {
                 />
               </div>
               {/* Floating Badge */}
-              <div className="absolute -bottom-6 -right-6 bg-surface-dark border border-border-moderate rounded-lg p-4 shadow-card-hover">
+              <div className="absolute -bottom-6 -right-6 bg-zinc-900 border border-white/20 rounded-lg p-4 shadow-lg-hover">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-accent-primary">23</div>
-                  <div className="text-xs text-text-tertiary">Years Military</div>
+                  <div className="text-2xl font-bold text-blue-400">23</div>
+                  <div className="text-xs text-zinc-500">Years Military</div>
                 </div>
               </div>
             </div>

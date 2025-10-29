@@ -47,15 +47,15 @@ export function AchievementsSection() {
   ]
 
   return (
-    <section id="achievements" className="py-20 lg:py-32 bg-surface-near-black">
+    <section id="achievements" className="py-20 lg:py-32 bg-zinc-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-100">
             Achievements & Recognition
           </h2>
           <div className="w-24 h-1 bg-accent-primary mx-auto"></div>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+          <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
             Consistent excellence across military service, government operations, 
             and private-sector innovation
           </p>
@@ -66,17 +66,17 @@ export function AchievementsSection() {
           {achievements.map((achievement, index) => (
             <div 
               key={index}
-              className="group bg-surface-dark border border-border-subtle rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-standard hover:-translate-y-1"
+              className="group bg-zinc-900 border border-white/10 rounded-lg p-6 shadow-lg hover:shadow-lg-hover transition-all duration-standard hover:-translate-y-1"
             >
               {/* Icon and Highlight */}
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center space-x-3">
-                  <div className="p-3 bg-accent-primary/10 rounded-lg text-accent-primary group-hover:bg-accent-primary/20 transition-colors">
+                  <div className="p-3 bg-accent-primary/10 rounded-lg text-blue-400 group-hover:bg-accent-primary/20 transition-colors">
                     {achievement.icon}
                   </div>
                 </div>
                 <div className="text-right">
-                  <div className="text-xs font-semibold text-accent-primary bg-accent-primary/10 px-2 py-1 rounded">
+                  <div className="text-xs font-semibold text-blue-400 bg-accent-primary/10 px-2 py-1 rounded">
                     {achievement.highlight}
                   </div>
                 </div>
@@ -84,13 +84,13 @@ export function AchievementsSection() {
 
               {/* Content */}
               <div className="space-y-3">
-                <h3 className="text-lg font-semibold text-text-primary group-hover:text-accent-primary transition-colors">
+                <h3 className="text-lg font-semibold text-zinc-100 group-hover:text-blue-400 transition-colors">
                   {achievement.title}
                 </h3>
-                <p className="text-sm font-medium text-text-secondary">
+                <p className="text-sm font-medium text-zinc-400">
                   {achievement.organization}
                 </p>
-                <p className="text-text-tertiary leading-relaxed">
+                <p className="text-zinc-500 leading-relaxed">
                   {achievement.description}
                 </p>
               </div>
@@ -110,10 +110,10 @@ export function AchievementsSection() {
               <div className="inline-flex items-center px-3 py-1 bg-accent-primary text-white text-sm font-medium rounded-full">
                 Featured Recognition
               </div>
-              <h3 className="text-2xl md:text-3xl font-bold text-text-primary">
+              <h3 className="text-2xl md:text-3xl font-bold text-zinc-100">
                 Institutional Impact & Leadership
               </h3>
-              <p className="text-lg text-text-secondary leading-relaxed">
+              <p className="text-lg text-zinc-400 leading-relaxed">
                 Beyond individual achievements, Dr. Khadsare's institutional contributions include building 
                 and upgrading forensic capabilities at CERT-In, strengthening LEA readiness through standardized 
                 processes, and influencing policy dialogues that shape national cybersecurity frameworks.
@@ -123,7 +123,7 @@ export function AchievementsSection() {
               <img 
                 src="/images/IMG-20251012-WA0078.jpg" 
                 alt="Dr. Khadsare presenting at conference"
-                className="w-full max-w-sm rounded-lg shadow-card"
+                className="w-full max-w-sm rounded-lg shadow-lg"
               />
             </div>
           </div>
@@ -132,19 +132,19 @@ export function AchievementsSection() {
         {/* Achievement Summary */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center space-y-2">
-            <div className="text-4xl font-bold text-accent-primary">3</div>
-            <div className="text-text-tertiary">Major Awards</div>
-            <div className="text-sm text-text-secondary">Army, NIA, CERT-In</div>
+            <div className="text-4xl font-bold text-blue-400">3</div>
+            <div className="text-zinc-500">Major Awards</div>
+            <div className="text-sm text-zinc-400">Army, NIA, CERT-In</div>
           </div>
           <div className="text-center space-y-2">
-            <div className="text-4xl font-bold text-accent-primary">2</div>
-            <div className="text-text-tertiary">Policy Committees</div>
-            <div className="text-sm text-text-secondary">CII & CHFI</div>
+            <div className="text-4xl font-bold text-blue-400">2</div>
+            <div className="text-zinc-500">Policy Committees</div>
+            <div className="text-sm text-zinc-400">CII & CHFI</div>
           </div>
           <div className="text-center space-y-2">
-            <div className="text-4xl font-bold text-accent-primary">1</div>
-            <div className="text-text-tertiary">Product Line</div>
-            <div className="text-sm text-text-secondary">DRONA Leadership</div>
+            <div className="text-4xl font-bold text-blue-400">1</div>
+            <div className="text-zinc-500">Product Line</div>
+            <div className="text-sm text-zinc-400">DRONA Leadership</div>
           </div>
         </div>
       </div>

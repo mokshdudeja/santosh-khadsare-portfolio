@@ -58,15 +58,15 @@ export function ContactSection() {
   ]
 
   return (
-    <section id="contact" className="py-20 lg:py-32 bg-surface-pure-black">
+    <section id="contact" className="py-20 lg:py-32 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-100">
             Let's Connect
           </h2>
           <div className="w-24 h-1 bg-accent-primary mx-auto"></div>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+          <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
             Ready to discuss cybersecurity challenges, training opportunities, or collaboration possibilities?
           </p>
         </div>
@@ -75,10 +75,10 @@ export function ContactSection() {
           {/* Contact Information */}
           <div className="lg:col-span-5 space-y-8">
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-text-primary">
+              <h3 className="text-2xl font-semibold text-zinc-100">
                 Professional Contact
               </h3>
-              <p className="text-text-secondary leading-relaxed">
+              <p className="text-zinc-400 leading-relaxed">
                 For professional inquiries, media engagements, or collaboration on DFIR initiatives, 
                 please reach out through the following channels. Dr. Khadsare is always open to 
                 discussing cybersecurity challenges and opportunities for knowledge sharing.
@@ -93,29 +93,29 @@ export function ContactSection() {
                   href={method.action}
                   target={method.action.startsWith('http') ? '_blank' : '_self'}
                   rel={method.action.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  className="group flex items-start space-x-4 p-4 bg-surface-dark border border-border-subtle rounded-lg hover:border-accent-primary/50 transition-all duration-standard hover:shadow-card-hover"
+                  className="group flex items-start space-x-4 p-4 bg-zinc-900 border border-white/10 rounded-lg hover:border-accent-primary/50 transition-all duration-standard hover:shadow-lg-hover"
                 >
-                  <div className="p-2 bg-accent-primary/10 rounded-lg text-accent-primary group-hover:bg-accent-primary/20 transition-colors">
+                  <div className="p-2 bg-accent-primary/10 rounded-lg text-blue-400 group-hover:bg-accent-primary/20 transition-colors">
                     {method.icon}
                   </div>
                   <div className="flex-1 space-y-1">
-                    <h4 className="font-semibold text-text-primary group-hover:text-accent-primary transition-colors">
+                    <h4 className="font-semibold text-zinc-100 group-hover:text-blue-400 transition-colors">
                       {method.title}
                     </h4>
-                    <p className="text-sm text-text-tertiary">{method.description}</p>
-                    <p className="text-sm text-text-secondary font-medium">{method.contact}</p>
+                    <p className="text-sm text-zinc-500">{method.description}</p>
+                    <p className="text-sm text-zinc-400 font-medium">{method.contact}</p>
                   </div>
-                  <ExternalLink className="w-4 h-4 text-text-tertiary group-hover:text-accent-primary transition-colors" />
+                  <ExternalLink className="w-4 h-4 text-zinc-500 group-hover:text-blue-400 transition-colors" />
                 </a>
               ))}
             </div>
 
             {/* Current Role */}
-            <div className="bg-surface-dark border border-border-subtle rounded-lg p-6">
-              <h4 className="font-semibold text-text-primary mb-3">Current Role</h4>
+            <div className="bg-zinc-900 border border-white/10 rounded-lg p-6">
+              <h4 className="font-semibold text-zinc-100 mb-3">Current Role</h4>
               <div className="space-y-2">
-                <p className="text-accent-primary font-medium">CBO/CTO at SysTools</p>
-                <p className="text-text-secondary text-sm">
+                <p className="text-blue-400 font-medium">CBO/CTO at SysTools</p>
+                <p className="text-zinc-400 text-sm">
                   Strategic leadership and technology vision for digital forensics and incident response solutions
                 </p>
               </div>
@@ -123,12 +123,12 @@ export function ContactSection() {
 
             {/* Consultation Areas */}
             <div className="space-y-4">
-              <h4 className="font-semibold text-text-primary">Areas of Expertise</h4>
+              <h4 className="font-semibold text-zinc-100">Areas of Expertise</h4>
               <div className="flex flex-wrap gap-2">
                 {consultationAreas.map((area, index) => (
                   <span 
                     key={index}
-                    className="px-3 py-1 bg-accent-primary/10 text-accent-primary text-sm rounded-full border border-accent-primary/20"
+                    className="px-3 py-1 bg-accent-primary/10 text-blue-400 text-sm rounded-full border border-accent-primary/20"
                   >
                     {area}
                   </span>
@@ -139,15 +139,15 @@ export function ContactSection() {
 
           {/* Contact Form */}
           <div className="lg:col-span-7">
-            <div className="bg-surface-dark border border-border-subtle rounded-lg p-8 shadow-card">
-              <h3 className="text-2xl font-semibold text-text-primary mb-6">
+            <div className="bg-zinc-900 border border-white/10 rounded-lg p-8 shadow-lg">
+              <h3 className="text-2xl font-semibold text-zinc-100 mb-6">
                 Send a Message
               </h3>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-text-secondary mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-zinc-400 mb-2">
                       Name *
                     </label>
                     <input
@@ -157,13 +157,13 @@ export function ContactSection() {
                       required
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-surface-near-black border border-border-subtle rounded-lg text-text-primary placeholder-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-lg text-zinc-100 placeholder-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors"
                       placeholder="Your full name"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-text-secondary mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-zinc-400 mb-2">
                       Email *
                     </label>
                     <input
@@ -173,7 +173,7 @@ export function ContactSection() {
                       required
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-surface-near-black border border-border-subtle rounded-lg text-text-primary placeholder-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-lg text-zinc-100 placeholder-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors"
                       placeholder="your.email@company.com"
                     />
                   </div>
@@ -181,7 +181,7 @@ export function ContactSection() {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="organization" className="block text-sm font-medium text-text-secondary mb-2">
+                    <label htmlFor="organization" className="block text-sm font-medium text-zinc-400 mb-2">
                       Organization
                     </label>
                     <input
@@ -190,13 +190,13 @@ export function ContactSection() {
                       name="organization"
                       value={formData.organization}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-surface-near-black border border-border-subtle rounded-lg text-text-primary placeholder-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-lg text-zinc-100 placeholder-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors"
                       placeholder="Company or institution"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-text-secondary mb-2">
+                    <label htmlFor="subject" className="block text-sm font-medium text-zinc-400 mb-2">
                       Subject *
                     </label>
                     <select
@@ -205,7 +205,7 @@ export function ContactSection() {
                       required
                       value={formData.subject}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-surface-near-black border border-border-subtle rounded-lg text-text-primary focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-lg text-zinc-100 focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors"
                     >
                       <option value="">Select a subject</option>
                       <option value="consultation">Consultation Request</option>
@@ -219,7 +219,7 @@ export function ContactSection() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-text-secondary mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-zinc-400 mb-2">
                     Message *
                   </label>
                   <textarea
@@ -229,7 +229,7 @@ export function ContactSection() {
                     rows={6}
                     value={formData.message}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-surface-near-black border border-border-subtle rounded-lg text-text-primary placeholder-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors resize-vertical"
+                    className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-lg text-zinc-100 placeholder-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors resize-vertical"
                     placeholder="Please describe your inquiry or how we can collaborate..."
                   ></textarea>
                 </div>
@@ -243,8 +243,8 @@ export function ContactSection() {
                 </button>
               </form>
 
-              <div className="mt-6 pt-6 border-t border-border-subtle">
-                <p className="text-sm text-text-tertiary text-center">
+              <div className="mt-6 pt-6 border-t border-white/10">
+                <p className="text-sm text-zinc-500 text-center">
                   Response typically within 24-48 hours. For urgent matters, please use email directly.
                 </p>
               </div>
@@ -254,8 +254,8 @@ export function ContactSection() {
       </div>
 
       {/* Footer */}
-      <div className="mt-20 pt-8 border-t border-border-subtle">
-        <div className="text-center text-text-tertiary">
+      <div className="mt-20 pt-8 border-t border-white/10">
+        <div className="text-center text-zinc-500">
           <p className="text-sm">
             © 2025 Lt Col (Dr) Santosh Khadsare. All rights reserved. | 
             <span className="mx-2">•</span>

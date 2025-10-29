@@ -5,7 +5,7 @@
 
 @layer base {
   * {
-    @apply border-subtle;
+    @apply border-white/10;
   }
   
   html {
@@ -13,7 +13,7 @@
   }
   
   body {
-    @apply bg-surface-near-black text-text-primary font-primary;
+    @apply bg-zinc-950 text-zinc-100 font-sans;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
   
@@ -39,20 +39,20 @@
   }
   
   ::-webkit-scrollbar-track {
-    @apply bg-surface-near-black;
+    @apply bg-zinc-950;
   }
   
   ::-webkit-scrollbar-thumb {
-    @apply bg-surface-hover rounded-sm;
+    @apply bg-zinc-900 rounded-sm;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-accent-primary;
+    @apply bg-blue-500;
   }
   
   /* Selection styles */
   ::selection {
-    @apply bg-accent-primary text-white;
+    @apply bg-blue-500 text-white;
   }
   
   /* Focus styles for accessibility */

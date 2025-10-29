@@ -55,15 +55,15 @@ export function PublicationsSection() {
   ]
 
   return (
-    <section id="publications" className="py-20 lg:py-32 bg-surface-near-black">
+    <section id="publications" className="py-20 lg:py-32 bg-zinc-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-100">
             Publications & Research
           </h2>
           <div className="w-24 h-1 bg-accent-primary mx-auto"></div>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+          <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
             Thought leadership through research, publications, and international speaking engagements
           </p>
         </div>
@@ -75,20 +75,20 @@ export function PublicationsSection() {
             <div className="bg-gradient-to-r from-accent-primary/10 to-accent-hover/10 border border-accent-primary/20 rounded-2xl p-8">
               <div className="flex items-start space-x-4 mb-6">
                 <div className="p-3 bg-accent-primary/20 rounded-lg">
-                  <BookOpen className="w-8 h-8 text-accent-primary" />
+                  <BookOpen className="w-8 h-8 text-blue-400" />
                 </div>
                 <div>
                   <div className="inline-flex items-center px-3 py-1 bg-accent-primary text-white text-sm font-medium rounded-full mb-2">
                     Featured Publication
                   </div>
-                  <h3 className="text-2xl font-bold text-text-primary mb-2">
+                  <h3 className="text-2xl font-bold text-zinc-100 mb-2">
                     Digital Forensics Journal (Digital4N6Journal)
                   </h3>
-                  <p className="text-accent-primary font-medium">Founder & Editor • Ongoing</p>
+                  <p className="text-blue-400 font-medium">Founder & Editor • Ongoing</p>
                 </div>
               </div>
               
-              <p className="text-lg text-text-secondary leading-relaxed mb-6">
+              <p className="text-lg text-zinc-400 leading-relaxed mb-6">
                 As founder of Digital4N6Journal, Dr. Khadsare has created a venue for peer and practitioner 
                 exchange. The journal elevates evidence-based practices, encourages rigorous reporting, and 
                 highlights technology trends—such as cloud forensics, mobile device artifacts, and the evolving 
@@ -97,16 +97,16 @@ export function PublicationsSection() {
               
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-4">
-                  <div className="flex items-center space-x-2 text-text-tertiary">
+                  <div className="flex items-center space-x-2 text-zinc-500">
                     <Users className="w-4 h-4" />
                     <span className="text-sm">Peer-reviewed platform</span>
                   </div>
-                  <div className="flex items-center space-x-2 text-text-tertiary">
+                  <div className="flex items-center space-x-2 text-zinc-500">
                     <Calendar className="w-4 h-4" />
                     <span className="text-sm">Ongoing publication</span>
                   </div>
                 </div>
-                <button className="flex items-center space-x-2 text-accent-primary hover:text-accent-hover transition-colors">
+                <button className="flex items-center space-x-2 text-blue-400 hover:text-accent-hover transition-colors">
                   <span className="text-sm font-medium">Read Journal</span>
                   <ExternalLink className="w-4 h-4" />
                 </button>
@@ -115,29 +115,29 @@ export function PublicationsSection() {
 
             {/* Other Publications */}
             <div className="space-y-6">
-              <h3 className="text-xl font-semibold text-text-primary">Research Articles & Guides</h3>
+              <h3 className="text-xl font-semibold text-zinc-100">Research Articles & Guides</h3>
               <div className="space-y-4">
                 {publications.slice(1).map((pub, index) => (
                   <div 
                     key={index}
-                    className="bg-surface-dark border border-border-subtle rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-standard group"
+                    className="bg-zinc-900 border border-white/10 rounded-lg p-6 shadow-lg hover:shadow-lg-hover transition-all duration-standard group"
                   >
                     <div className="flex items-start justify-between mb-3">
                       <div>
-                        <h4 className="text-lg font-semibold text-text-primary group-hover:text-accent-primary transition-colors">
+                        <h4 className="text-lg font-semibold text-zinc-100 group-hover:text-blue-400 transition-colors">
                           {pub.title}
                         </h4>
-                        <p className="text-sm text-text-secondary">{pub.type} • {pub.year}</p>
+                        <p className="text-sm text-zinc-400">{pub.type} • {pub.year}</p>
                       </div>
                     </div>
-                    <p className="text-text-secondary mb-4 leading-relaxed">
+                    <p className="text-zinc-400 mb-4 leading-relaxed">
                       {pub.description}
                     </p>
                     <div className="flex items-center justify-between">
-                      <div className="text-sm text-text-tertiary">
+                      <div className="text-sm text-zinc-500">
                         Impact: {pub.impact}
                       </div>
-                      <button className="text-accent-primary hover:text-accent-hover transition-colors">
+                      <button className="text-blue-400 hover:text-accent-hover transition-colors">
                         <ExternalLink className="w-4 h-4" />
                       </button>
                     </div>
@@ -151,8 +151,8 @@ export function PublicationsSection() {
           <div className="lg:col-span-4">
             <div className="sticky top-8 space-y-6">
               <div>
-                <h3 className="text-xl font-semibold text-text-primary mb-4">Speaking Engagements</h3>
-                <p className="text-text-secondary mb-6">
+                <h3 className="text-xl font-semibold text-zinc-100 mb-4">Speaking Engagements</h3>
+                <p className="text-zinc-400 mb-6">
                   International conferences and platforms
                 </p>
               </div>
@@ -161,17 +161,17 @@ export function PublicationsSection() {
                 {speakingEngagements.map((engagement, index) => (
                   <div 
                     key={index}
-                    className="bg-surface-dark border border-border-subtle rounded-lg p-4 shadow-card hover:shadow-card-hover transition-all duration-standard group"
+                    className="bg-zinc-900 border border-white/10 rounded-lg p-4 shadow-lg hover:shadow-lg-hover transition-all duration-standard group"
                   >
                     <div className="space-y-2">
                       <div className="flex items-center justify-between">
-                        <h4 className="font-semibold text-text-primary group-hover:text-accent-primary transition-colors">
+                        <h4 className="font-semibold text-zinc-100 group-hover:text-blue-400 transition-colors">
                           {engagement.event}
                         </h4>
-                        <span className="text-xs text-text-tertiary">{engagement.year}</span>
+                        <span className="text-xs text-zinc-500">{engagement.year}</span>
                       </div>
-                      <p className="text-sm text-text-secondary">{engagement.type}</p>
-                      <p className="text-sm text-text-tertiary">{engagement.topic}</p>
+                      <p className="text-sm text-zinc-400">{engagement.type}</p>
+                      <p className="text-sm text-zinc-500">{engagement.topic}</p>
                     </div>
                   </div>
                 ))}
@@ -182,7 +182,7 @@ export function PublicationsSection() {
                 <img 
                   src="/images/IMG-20251012-WA0079.jpg" 
                   alt="Office with DFIR poster"
-                  className="w-full rounded-lg shadow-card"
+                  className="w-full rounded-lg shadow-lg"
                 />
               </div>
             </div>
@@ -190,30 +190,30 @@ export function PublicationsSection() {
         </div>
 
         {/* Research Impact Stats */}
-        <div className="mt-16 bg-surface-dark border border-border-subtle rounded-2xl p-8">
-          <h3 className="text-2xl font-semibold text-text-primary text-center mb-8">
+        <div className="mt-16 bg-zinc-900 border border-white/10 rounded-2xl p-8">
+          <h3 className="text-2xl font-semibold text-zinc-100 text-center mb-8">
             Research Impact
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-accent-primary">1</div>
-              <div className="text-text-tertiary">Journal Founded</div>
-              <div className="text-sm text-text-secondary">Digital4N6Journal</div>
+              <div className="text-3xl font-bold text-blue-400">1</div>
+              <div className="text-zinc-500">Journal Founded</div>
+              <div className="text-sm text-zinc-400">Digital4N6Journal</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-accent-primary">Multiple</div>
-              <div className="text-text-tertiary">Publications</div>
-              <div className="text-sm text-text-secondary">Technical articles</div>
+              <div className="text-3xl font-bold text-blue-400">Multiple</div>
+              <div className="text-zinc-500">Publications</div>
+              <div className="text-sm text-zinc-400">Technical articles</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-accent-primary">5+</div>
-              <div className="text-text-tertiary">Speaking Events</div>
-              <div className="text-sm text-text-secondary">International platforms</div>
+              <div className="text-3xl font-bold text-blue-400">5+</div>
+              <div className="text-zinc-500">Speaking Events</div>
+              <div className="text-sm text-zinc-400">International platforms</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-accent-primary">Global</div>
-              <div className="text-text-tertiary">Reach</div>
-              <div className="text-sm text-text-secondary">International audience</div>
+              <div className="text-3xl font-bold text-blue-400">Global</div>
+              <div className="text-zinc-500">Reach</div>
+              <div className="text-sm text-zinc-400">International audience</div>
             </div>
           </div>
         </div>

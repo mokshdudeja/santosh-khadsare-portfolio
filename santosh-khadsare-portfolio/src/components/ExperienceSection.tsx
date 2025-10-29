@@ -42,15 +42,15 @@ export function ExperienceSection() {
   ]
 
   return (
-    <section id="experience" className="py-20 lg:py-32 bg-surface-near-black">
+    <section id="experience" className="py-20 lg:py-32 bg-zinc-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-100">
             Career Timeline
           </h2>
           <div className="w-24 h-1 bg-accent-primary mx-auto"></div>
-          <p className="text-xl text-text-secondary max-w-3xl mx-auto">
+          <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
             25+ years of progressive leadership spanning military operations, 
             national cybersecurity response, and corporate innovation
           </p>
@@ -59,7 +59,7 @@ export function ExperienceSection() {
         {/* Timeline */}
         <div className="relative">
           {/* Timeline Line */}
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-border-subtle transform md:-translate-x-px"></div>
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-border-white/10 transform md:-translate-x-px"></div>
 
           {/* Timeline Items */}
           <div className="space-y-12">
@@ -72,7 +72,7 @@ export function ExperienceSection() {
                   <div className={`w-4 h-4 rounded-full border-2 ${
                     exp.isCurrent 
                       ? 'bg-accent-primary border-accent-primary shadow-accent-glow animate-glow-pulse' 
-                      : 'bg-surface-hover border-border-moderate'
+                      : 'bg-zinc-800 border-white/20'
                   }`}></div>
                 </div>
 
@@ -80,12 +80,12 @@ export function ExperienceSection() {
                 <div className={`w-full md:w-5/12 ml-12 md:ml-0 ${
                   index % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'
                 }`}>
-                  <div className="bg-surface-dark border border-border-subtle rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-standard group">
+                  <div className="bg-zinc-900 border border-white/10 rounded-lg p-6 shadow-lg hover:shadow-lg-hover transition-all duration-standard group">
                     {/* Year Badge */}
                     <div className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium mb-4 ${
                       exp.isCurrent 
-                        ? 'bg-accent-primary/10 text-accent-primary border border-accent-primary/20' 
-                        : 'bg-surface-hover text-text-secondary border border-border-subtle'
+                        ? 'bg-accent-primary/10 text-blue-400 border border-accent-primary/20' 
+                        : 'bg-zinc-800 text-zinc-400 border border-white/10'
                     }`}>
                       {exp.isCurrent && <div className="w-2 h-2 bg-accent-primary rounded-full mr-2 animate-pulse"></div>}
                       {exp.year}
@@ -94,27 +94,27 @@ export function ExperienceSection() {
 
                     {/* Role and Organization */}
                     <div className="space-y-2 mb-4">
-                      <h3 className="text-xl font-semibold text-text-primary group-hover:text-accent-primary transition-colors">
+                      <h3 className="text-xl font-semibold text-zinc-100 group-hover:text-blue-400 transition-colors">
                         {exp.role}
                       </h3>
-                      <p className="text-accent-primary font-medium">{exp.organization}</p>
+                      <p className="text-blue-400 font-medium">{exp.organization}</p>
                     </div>
 
                     {/* Description */}
-                    <p className="text-text-secondary mb-6 leading-relaxed">
+                    <p className="text-zinc-400 mb-6 leading-relaxed">
                       {exp.description}
                     </p>
 
                     {/* Achievements */}
                     <div className="space-y-2">
-                      <h4 className="text-sm font-semibold text-text-tertiary uppercase tracking-wide">
+                      <h4 className="text-sm font-semibold text-zinc-500 uppercase tracking-wide">
                         Key Achievements
                       </h4>
                       <ul className="space-y-2">
                         {exp.achievements.map((achievement, achIndex) => (
                           <li key={achIndex} className="flex items-start space-x-3">
                             <div className="w-1.5 h-1.5 bg-accent-primary rounded-full mt-2 flex-shrink-0"></div>
-                            <span className="text-text-secondary text-sm">{achievement}</span>
+                            <span className="text-zinc-400 text-sm">{achievement}</span>
                           </li>
                         ))}
                       </ul>
@@ -127,26 +127,26 @@ export function ExperienceSection() {
         </div>
 
         {/* Career Stats */}
-        <div className="mt-20 bg-surface-dark border border-border-subtle rounded-2xl p-8">
-          <h3 className="text-2xl font-semibold text-text-primary text-center mb-8">
+        <div className="mt-20 bg-zinc-900 border border-white/10 rounded-2xl p-8">
+          <h3 className="text-2xl font-semibold text-zinc-100 text-center mb-8">
             Career Impact
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-accent-primary">25+</div>
-              <div className="text-text-tertiary">Years Experience</div>
+              <div className="text-3xl font-bold text-blue-400">25+</div>
+              <div className="text-zinc-500">Years Experience</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-accent-primary">3</div>
-              <div className="text-text-tertiary">Career Phases</div>
+              <div className="text-3xl font-bold text-blue-400">3</div>
+              <div className="text-zinc-500">Career Phases</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-accent-primary">100+</div>
-              <div className="text-text-tertiary">Professionals Trained</div>
+              <div className="text-3xl font-bold text-blue-400">100+</div>
+              <div className="text-zinc-500">Professionals Trained</div>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-accent-primary">Global</div>
-              <div className="text-text-tertiary">Impact Reach</div>
+              <div className="text-3xl font-bold text-blue-400">Global</div>
+              <div className="text-zinc-500">Impact Reach</div>
             </div>
           </div>
         </div>

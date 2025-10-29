@@ -8,7 +8,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
   return (
     <section 
       id="hero"
-      className="relative min-h-screen flex items-center justify-center bg-surface-pure-black overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden"
     >
       {/* Background Glow Effects */}
       <div className="absolute inset-0">
@@ -21,7 +21,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
           {/* Profile Image */}
           <div className="flex justify-center">
             <div className="relative">
-              <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-2 border-border-subtle shadow-accent-glow">
+              <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-2 border-white/10 shadow-accent-glow">
                 <img 
                   src="/images/IMG-20251012-WA0076.jpg" 
                   alt="Lt Col (Dr) Santosh Khadsare"
@@ -35,17 +35,17 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
 
           {/* Name and Title */}
           <div className="space-y-4">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-text-primary tracking-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-zinc-100 tracking-tight">
               Lt Col (Dr)
               <br />
               <span className="text-gradient">Santosh Khadsare</span>
             </h1>
             
             <div className="space-y-2">
-              <p className="text-xl md:text-2xl lg:text-3xl font-medium text-text-secondary tracking-wide">
+              <p className="text-xl md:text-2xl lg:text-3xl font-medium text-zinc-400 tracking-wide">
                 25+ Years | Cyber Security & DFIR Expert
               </p>
-              <p className="text-lg md:text-xl text-text-tertiary">
+              <p className="text-lg md:text-xl text-zinc-500">
                 CBO/CTO at SysTools
               </p>
             </div>
@@ -53,7 +53,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
 
           {/* Tagline */}
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg md:text-xl lg:text-2xl text-text-primary leading-relaxed">
+            <p className="text-lg md:text-xl lg:text-2xl text-zinc-100 leading-relaxed">
               Distinguished cybersecurity leader with military discipline, national DFIR expertise, 
               and corporate innovation. Building resilient digital ecosystems through operational 
               rigor and capability development.
@@ -72,7 +72,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             
             <button
               onClick={() => onNavigate('contact')}
-              className="group px-8 py-4 border-2 border-accent-primary text-accent-primary hover:bg-accent-primary hover:text-white font-semibold rounded-lg transition-all duration-standard flex items-center gap-2"
+              className="group px-8 py-4 border-2 border-accent-primary text-blue-400 hover:bg-accent-primary hover:text-white font-semibold rounded-lg transition-all duration-standard flex items-center gap-2"
             >
               <Mail className="w-4 h-4" />
               Contact
@@ -82,16 +82,16 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
           {/* Credentials */}
           <div className="pt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-center">
             <div className="space-y-2">
-              <div className="text-2xl font-bold text-accent-primary">25+</div>
-              <div className="text-sm text-text-tertiary">Years Experience</div>
+              <div className="text-2xl font-bold text-blue-400">25+</div>
+              <div className="text-sm text-zinc-500">Years Experience</div>
             </div>
             <div className="space-y-2">
-              <div className="text-2xl font-bold text-accent-primary">100+</div>
-              <div className="text-sm text-text-tertiary">Professionals Mentored</div>
+              <div className="text-2xl font-bold text-blue-400">100+</div>
+              <div className="text-sm text-zinc-500">Professionals Mentored</div>
             </div>
             <div className="space-y-2">
-              <div className="text-2xl font-bold text-accent-primary">Global</div>
-              <div className="text-sm text-text-tertiary">Training Impact</div>
+              <div className="text-2xl font-bold text-blue-400">Global</div>
+              <div className="text-sm text-zinc-500">Training Impact</div>
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <button
           onClick={() => onNavigate('about')}
-          className="flex flex-col items-center space-y-2 text-text-tertiary hover:text-accent-primary transition-colors animate-scroll-indicator"
+          className="flex flex-col items-center space-y-2 text-zinc-500 hover:text-blue-400 transition-colors animate-scroll-indicator"
         >
           <span className="text-sm font-medium">Scroll to explore</span>
           <ChevronDown className="w-5 h-5" />

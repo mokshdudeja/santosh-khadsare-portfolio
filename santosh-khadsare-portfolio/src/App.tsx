@@ -40,7 +40,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-surface-near-black text-text-primary">
+    <div className="min-h-screen bg-zinc-950 text-zinc-100">
       <Navigation 
         activeSection={activeSection} 
         onNavigate={scrollToSection}
