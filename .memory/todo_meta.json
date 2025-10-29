@@ -12,14 +12,14 @@
         "id": "2",
         "content": "Design professional portfolio website structure and visual style",
         "details": "Create a modern, professional design system with sections for: About, Experience, Achievements, Publications, Contact. Focus on cybersecurity/digital forensics theme with professional aesthetics",
-        "status": "in_progress",
+        "status": "completed",
         "priority": "high"
       },
       "3": {
         "id": "3",
         "content": "Develop interactive portfolio website",
         "details": "Build a responsive, feature-rich portfolio website with modern UI/UX, including: professional layout, contact forms, achievement highlights, publication showcase, and mobile-responsive design",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       }
     }

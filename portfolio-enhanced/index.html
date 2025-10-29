@@ -1,0 +1,2329 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lt Col (Dr) Santosh Khadsare - Cybersecurity & DFIR Expert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'primary': ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+                    },
+                    colors: {
+                        'surface': {
+                            'pure-black': '#000000',
+                            'near-black': '#0a0a0a',
+                            'dark': '#141414',
+                            'hover': '#1e1e1e',
+                            'modal': '#282828',
+                        },
+                        'text': {
+                            'primary': '#e4e4e7',
+                            'secondary': '#a1a1aa',
+                            'tertiary': '#71717a',
+                        },
+                        'accent': {
+                            'primary': '#3b82f6',
+                            'hover': '#60a5fa',
+                            'muted': '#2563eb',
+                        },
+                        'semantic': {
+                            'success': '#22c55e',
+                            'warning': '#f59e0b',
+                            'error': '#ef4444',
+                        },
+                        'border': {
+                            'subtle': 'rgba(255, 255, 255, 0.1)',
+                            'moderate': 'rgba(255, 255, 255, 0.15)',
+                            'strong': 'rgba(255, 255, 255, 0.2)',
+                        }
+                    },
+                    boxShadow: {
+                        'card': '0 0 0 1px rgba(255, 255, 255, 0.05), 0 4px 12px rgba(0, 0, 0, 0.5)',
+                        'card-hover': '0 0 0 1px rgba(255, 255, 255, 0.1), 0 8px 24px rgba(0, 0, 0, 0.6)',
+                        'accent-glow': '0 0 20px rgba(59, 130, 246, 0.5), 0 0 40px rgba(59, 130, 246, 0.3)',
+                        'focus-glow': '0 0 0 3px rgba(59, 130, 246, 0.4)',
+                    },
+                    animation: {
+                        'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
+                        'scroll-indicator': 'scroll-indicator 2s ease-in-out infinite',
+                        'fade-in': 'fade-in 0.6s ease-out',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes glow-pulse {
+            0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+            50% { box-shadow: 0 0 30px rgba(59, 130, 246, 0.7); }
+        }
+        @keyframes scroll-indicator {
+            0%, 100% { transform: translateY(0); opacity: 1; }
+            50% { transform: translateY(8px); opacity: 0.5; }
+        }
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        html { scroll-behavior: smooth; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #1e1e1e; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #3b82f6; }
+        ::selection { background: #3b82f6; color: white; }
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-surface-near-black text-text-primary font-primary">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 translate-y-0 bg-surface-near-black/90 backdrop-blur-md border-b border-border-subtle">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <a href="#hero" class="text-lg font-semibold text-text-primary hover:text-accent-primary transition-colors">
+                    Lt Col (Dr) Santosh Khadsare
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#hero" class="text-sm font-medium text-accent-primary border-b-2 border-accent-primary pb-1">Home</a>
+                    <a href="#about" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors relative group">
+                        About
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent-primary transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+                    <a href="#experience" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors relative group">
+                        Experience
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent-primary transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+                    <a href="#achievements" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors relative group">
+                        Achievements
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent-primary transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+                    <a href="#publications" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors relative group">
+                        Publications
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent-primary transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+                    <a href="#impact" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors relative group">
+                        Impact
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent-primary transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+                    <a href="#contact" class="text-sm font-medium text-text-secondary hover:text-text-primary transition-colors relative group">
+                        Contact
+                        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent-primary transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+                </div>
+                <a href="#contact" class="hidden sm:inline-flex px-4 py-2 text-sm font-semibold text-white bg-accent-primary hover:bg-accent-hover rounded-lg transition-all duration-300 hover:shadow-accent-glow">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center bg-surface-pure-black overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-primary/5 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-accent-hover/3 rounded-full blur-2xl"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-on-scroll">
+            <div class="space-y-8">
+                <!-- Professional Profile Image -->
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <div class="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-2 border-border-subtle shadow-accent-glow bg-gradient-to-br from-accent-primary/20 to-accent-hover/20">
+                            <img src="images/hero-profile.jpg" alt="Lt Col (Dr) Santosh Khadsare - Professional Photo" class="w-full h-full object-cover" loading="eager">
+                        </div>
+                        <div class="absolute inset-0 rounded-full border-2 border-accent-primary/30 animate-glow-pulse"></div>
+                    </div>
+                </div>
+
+                <!-- Name and Title -->
+                <div class="space-y-4">
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-text-primary tracking-tight">
+                        Lt Col (Dr)<br>
+                        <span class="text-gradient">Santosh Khadsare</span>
+                    </h1>
+                    <div class="space-y-2">
+                        <p class="text-xl md:text-2xl lg:text-3xl font-medium text-text-secondary tracking-wide">
+                            25+ Years | Cyber Security & DFIR Expert
+                        </p>
+                        <p class="text-lg md:text-xl text-text-tertiary">
+                            CBO/CTO at SysTools
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tagline -->
+                <div class="max-w-4xl mx-auto">
+                    <p class="text-lg md:text-xl lg:text-2xl text-text-primary leading-relaxed">
+                        Distinguished cybersecurity leader with military discipline, national DFIR expertise, 
+                        and corporate innovation. Building resilient digital ecosystems through operational 
+                        rigor and capability development.
+                    </p>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
+                    <a href="#experience" class="group px-8 py-4 bg-accent-primary hover:bg-accent-hover text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-accent-glow flex items-center gap-2">
+                        View Experience
+                        <svg class="w-4 h-4 group-hover:translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="group px-8 py-4 border-2 border-accent-primary text-accent-primary hover:bg-accent-primary hover:text-white font-semibold rounded-lg transition-all duration-300 flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        Contact
+                    </a>
+                </div>
+
+                <!-- Credentials -->
+                <div class="pt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto text-center">
+                    <div class="space-y-2">
+                        <div class="text-2xl font-bold text-accent-primary">25+</div>
+                        <div class="text-sm text-text-tertiary">Years Experience</div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-2xl font-bold text-accent-primary">100+</div>
+                        <div class="text-sm text-text-tertiary">Professionals Mentored</div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-2xl font-bold text-accent-primary">Global</div>
+                        <div class="text-sm text-text-tertiary">Training Impact</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+            <a href="#about" class="flex flex-col items-center space-y-2 text-text-tertiary hover:text-accent-primary transition-colors animate-scroll-indicator">
+                <span class="text-sm font-medium">Scroll to explore</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 lg:py-32 bg-surface-near-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Content -->
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="space-y-4">
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary">
+                            About Dr. Khadsare
+                        </h2>
+                        <div class="w-24 h-1 bg-accent-primary"></div>
+                    </div>
+
+                    <div class="space-y-6 text-lg text-text-secondary leading-relaxed">
+                        <p>
+                            Dr. Khadsare's career reflects a deep, sustained focus on cyber security and DFIR—disciplines 
+                            where operational precision, chain-of-custody discipline, and reproducible methodologies are 
+                            non-negotiable. After 23 years in the Indian Army, where he developed operational discipline 
+                            and crisis-handling experience, he transitioned into national cybersecurity infrastructure by 
+                            heading the Digital Forensic Lab at CERT-In from 2019 to 2021.
+                        </p>
+                        
+                        <p>
+                            In his current capacity at SysTools as CBO/CTO, Dr. Khadsare sets the strategic and technical 
+                            direction for the company's digital forensics and incident response offerings. He is responsible 
+                            for technology vision, solution architecture, quality assurance, and the integration of services 
+                            with product innovation, driving the DRONA product line under the Make in India initiative.
+                        </p>
+
+                        <p>
+                            His international training engagements with LEAs reflect a belief in standardized processes, 
+                            ethical frameworks, and practical, scenario-based learning. Throughout his career, Dr. Khadsare's 
+                            achievements have been recognized by the Army, NIA, and CERT-In—an endorsement of his operational 
+                            excellence, investigative rigor, and innovation.
+                        </p>
+                    </div>
+
+                    <!-- Core Themes -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-semibold text-text-primary">Core Themes</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="space-y-3">
+                                <div class="w-12 h-12 bg-accent-primary/10 rounded-lg flex items-center justify-center">
+                                    <div class="w-6 h-6 bg-accent-primary rounded"></div>
+                                </div>
+                                <h4 class="font-semibold text-text-primary">Operational Rigor</h4>
+                                <p class="text-text-tertiary text-sm">
+                                    Military-grade discipline in operations, evidence handling, and crisis management
+                                </p>
+                            </div>
+                            
+                            <div class="space-y-3">
+                                <div class="w-12 h-12 bg-accent-primary/10 rounded-lg flex items-center justify-center">
+                                    <div class="w-6 h-6 bg-accent-primary rounded-full"></div>
+                                </div>
+                                <h4 class="font-semibold text-text-primary">Capability Building</h4>
+                                <p class="text-text-tertiary text-sm">
+                                    Developing talent pipelines through mentorship, training, and institutional frameworks
+                                </p>
+                            </div>
+                            
+                            <div class="space-y-3">
+                                <div class="w-12 h-12 bg-accent-primary/10 rounded-lg flex items-center justify-center">
+                                    <div class="w-6 h-6 border-2 border-accent-primary"></div>
+                                </div>
+                                <h4 class="font-semibold text-text-primary">Ecosystem Development</h4>
+                                <p class="text-text-tertiary text-sm">
+                                    Creating sustainable indigenous capabilities and standard operating procedures
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="lg:col-span-5">
+                    <div class="relative">
+                        <div class="aspect-[4/5] rounded-2xl overflow-hidden border border-border-subtle shadow-card-hover bg-gradient-to-br from-accent-primary/10 to-accent-hover/5">
+                            <img src="images/about-cert.jpg" alt="CERT-In Office Professional Environment" class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <!-- Floating Badge -->
+                        <div class="absolute -bottom-6 -right-6 bg-surface-dark border border-border-moderate rounded-lg p-4 shadow-card-hover">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-accent-primary">23</div>
+                                <div class="text-xs text-text-tertiary">Years Military</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-20 lg:py-32 bg-surface-near-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+            <!-- Section Header -->
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary">
+                    Career Timeline
+                </h2>
+                <div class="w-24 h-1 bg-accent-primary mx-auto"></div>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    25+ years of progressive leadership spanning military operations, 
+                    national cybersecurity response, and corporate innovation
+                </p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-border-subtle transform md:-translate-x-px"></div>
+
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+                    <!-- Current Role -->
+                    <div class="relative flex items-center md:flex-row">
+                        <!-- Timeline Node -->
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 z-10">
+                            <div class="w-4 h-4 rounded-full bg-accent-primary border-2 border-accent-primary shadow-accent-glow animate-glow-pulse"></div>
+                        </div>
+
+                        <!-- Content Card -->
+                        <div class="w-full md:w-5/12 ml-12 md:ml-0 md:mr-auto md:pr-8">
+                            <div class="bg-surface-dark border border-border-subtle rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-300 group">
+                                <!-- Year Badge -->
+                                <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium mb-4 bg-accent-primary/10 text-accent-primary border border-accent-primary/20">
+                                    <div class="w-2 h-2 bg-accent-primary rounded-full mr-2 animate-pulse"></div>
+                                    Current
+                                    <span class="ml-1">(Present)</span>
+                                </div>
+
+                                <!-- Role and Organization -->
+                                <div class="space-y-2 mb-4">
+                                    <h3 class="text-xl font-semibold text-text-primary group-hover:text-accent-primary transition-colors">
+                                        CBO/CTO
+                                    </h3>
+                                    <p class="text-accent-primary font-medium">SysTools</p>
+                                </div>
+
+                                <!-- Description -->
+                                <p class="text-text-secondary mb-6 leading-relaxed">
+                                    Strategic leadership and technology vision for digital forensics and incident response solutions. 
+                                    Directing DRONA product line under Make in India initiative to create indigenous cybersecurity capabilities.
+                                </p>
+
+                                <!-- Achievements -->
+                                <div class="space-y-2">
+                                    <h4 class="text-sm font-semibold text-text-tertiary uppercase tracking-wide">
+                                        Key Achievements
+                                    </h4>
+                                    <ul class="space-y-2">
+                                        <li class="flex items-start space-x-3">
+                                            <div class="w-1.5 h-1.5 bg-accent-primary rounded-full mt-2 flex-shrink-0"></div>
+                                            <span class="text-text-secondary text-sm">Product leadership and technology strategy</span>
+                                        </li>
+                                        <li class="flex items-start space-x-3">
+                                            <div class="w-1.5 h-1.5 bg-accent-primary rounded-full mt-2 flex-shrink-0"></div>
+                                            <span class="text-text-secondary text-sm">Ecosystem development and market expansion</span>
+                                        </li>
+                                        <li class="flex items-start space-x-3">
+                                            <div class="w-1.5 h-1.5 bg-accent-primary rounded-full mt-2 flex-shrink-0"></div>
+                                            <span class="text-text-secondary text-sm">Integration of services with product innovation</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CERT-In Role -->
+                    <div class="relative flex items-center md:flex-row-reverse">
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 z-10">
+                            <div class="w-4 h-4 rounded-full bg-surface-hover border-2 border-border-moderate"></div>
+                        </div>
+                        <div class="w-full md:w-5/12 ml-12 md:ml-0 md:ml-auto md:pl-8">
+                            <div class="bg-surface-dark border border-border-subtle rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-300 group">
+                                <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium mb-4 bg-surface-hover text-text-secondary border border-border-subtle">
+                                    2019-2021
+                                </div>
+                                <h3 class="text-xl font-semibold text-text-primary group-hover:text-accent-primary transition-colors">
+                                    Head, Digital Forensic Lab
+                                </h3>
+                                <p class="text-accent-primary font-medium mb-4">CERT-In</p>
+                                <p class="text-text-secondary mb-6 leading-relaxed">
+                                    Led forensic operations and served as trusted interface between national cybersecurity functions 
+                                    and India's law enforcement ecosystem, strengthening investigative outcomes across the nation.
+                                </p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start space-x-3">
+                                        <div class="w-1.5 h-1.5 bg-accent-primary rounded-full mt-2 flex-shrink-0"></div>
+                                        <span class="text-text-secondary text-sm">Directed national-level forensic operations</span>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <div class="w-1.5 h-1.5 bg-accent-primary rounded-full mt-2 flex-shrink-0"></div>
+                                        <span class="text-text-secondary text-sm">Coordinated with law enforcement agencies</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Military Service -->
+                    <div class="relative flex items-center md:flex-row">
+                        <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 z-10">
+                            <div class="w-4 h-4 rounded-full bg-surface-hover border-2 border-border-moderate"></div>
+                        </div>
+                        <div class="w-full md:w-5/12 ml-12 md:ml-0 md:mr-auto md:pr-8">
+                            <div class="bg-surface-dark border border-border-subtle rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-300 group">
+                                <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium mb-4 bg-surface-hover text-text-secondary border border-border-subtle">
+                                    23 Years
+                                </div>
+                                <h3 class="text-xl font-semibold text-text-primary group-hover:text-accent-primary transition-colors">
+                                    Lieutenant Colonel
+                                </h3>
+                                <p class="text-accent-primary font-medium mb-4">Indian Army</p>
+                                <p class="text-text-secondary mb-6 leading-relaxed">
+                                    Distinguished military service developing operational discipline, crisis-handling experience, 
+                                    and leadership skills. Established foundation in evidence handling and chain-of-custody protocols.
+                                </p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start space-x-3">
+                                        <div class="w-1.5 h-1.5 bg-accent-primary rounded-full mt-2 flex-shrink-0"></div>
+                                        <span class="text-text-secondary text-sm">Operational leadership and team management</span>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <div class="w-1.5 h-1.5 bg-accent-primary rounded-full mt-2 flex-shrink-0"></div>
+                                        <span class="text-text-secondary text-sm">Crisis-handling and decision-making under pressure</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Career Stats -->
+            <div class="mt-20 bg-surface-dark border border-border-subtle rounded-2xl p-8 animate-on-scroll">
+                <h3 class="text-2xl font-semibold text-text-primary text-center mb-8">
+                    Career Impact
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                    <div class="space-y-2">
+                        <div class="text-3xl font-bold text-accent-primary">25+</div>
+                        <div class="text-text-tertiary">Years Experience</div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-3xl font-bold text-accent-primary">3</div>
+                        <div class="text-text-tertiary">Career Phases</div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-3xl font-bold text-accent-primary">100+</div>
+                        <div class="text-text-tertiary">Professionals Trained</div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-3xl font-bold text-accent-primary">Global</div>
+                        <div class="text-text-tertiary">Impact Reach</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-20 lg:py-32 bg-surface-near-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+            <!-- Section Header -->
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary">
+                    Achievements & Recognition
+                </h2>
+                <div class="w-24 h-1 bg-accent-primary mx-auto"></div>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Consistent excellence across military service, government operations, 
+                    and private-sector innovation
+                </p>
+            </div>
+
+            <!-- Achievements Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Military Excellence -->
+                <div class="group bg-surface-dark border border-border-subtle rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="p-3 bg-accent-primary/10 rounded-lg text-accent-primary group-hover:bg-accent-primary/20 transition-colors">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7v10c0 5.55 3.84 9.739 9 9.739s9-4.189 9-9.739V7l-10-5z"/>
+                            </svg>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs font-semibold text-accent-primary bg-accent-primary/10 px-2 py-1 rounded">23 Years</div>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary group-hover:text-accent-primary transition-colors mb-2">Military Excellence</h3>
+                    <p class="text-sm font-medium text-text-secondary mb-3">Indian Army</p>
+                    <p class="text-text-tertiary leading-relaxed">
+                        Excellence in service and leadership throughout 23 years of distinguished military service, 
+                        developing operational discipline and crisis-handling expertise.
+                    </p>
+                </div>
+
+                <!-- NIA Recognition -->
+                <div class="group bg-surface-dark border border-border-subtle rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="p-3 bg-accent-primary/10 rounded-lg text-accent-primary group-hover:bg-accent-primary/20 transition-colors">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L13.09 8.26L19 9L13.09 9.74L12 16L10.91 9.74L5 9L10.91 8.26L12 2M21 9L13 9V7L21 7V9Z"/>
+                            </svg>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs font-semibold text-accent-primary bg-accent-primary/10 px-2 py-1 rounded">Excellence Award</div>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary group-hover:text-accent-primary transition-colors mb-2">NIA Recognition</h3>
+                    <p class="text-sm font-medium text-text-secondary mb-3">National Investigation Agency</p>
+                    <p class="text-text-tertiary leading-relaxed">
+                        Awarded for investigative excellence and operational contributions to national security 
+                        and law enforcement capabilities.
+                    </p>
+                </div>
+
+                <!-- CERT-In Achievement -->
+                <div class="group bg-surface-dark border border-border-subtle rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="p-3 bg-accent-primary/10 rounded-lg text-accent-primary group-hover:bg-accent-primary/20 transition-colors">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M17.5 4.5c-1.95 0-3.73.72-5.14 2.03l-6.19 6.19c-.39.39-.39 1.02 0 1.41l2.12 2.12c.39.39 1.02.39 1.41 0l6.19-6.19c1.31-1.41 2.03-3.19 2.03-5.14 0-2.21-1.79-4-4-4zM9 9c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"/>
+                            </svg>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs font-semibold text-accent-primary bg-accent-primary/10 px-2 py-1 rounded">Outstanding</div>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary group-hover:text-accent-primary transition-colors mb-2">CERT-In Achievement</h3>
+                    <p class="text-sm font-medium text-text-secondary mb-3">Indian Computer Emergency Response Team</p>
+                    <p class="text-text-tertiary leading-relaxed">
+                        Outstanding contributions to DFIR operations during national cybersecurity response 
+                        and incident management.
+                    </p>
+                </div>
+
+                <!-- DRONA Product Line -->
+                <div class="group bg-surface-dark border border-border-subtle rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="p-3 bg-accent-primary/10 rounded-lg text-accent-primary group-hover:bg-accent-primary/20 transition-colors">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs font-semibold text-accent-primary bg-accent-primary/10 px-2 py-1 rounded">Innovation Leader</div>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary group-hover:text-accent-primary transition-colors mb-2">DRONA Product Line</h3>
+                    <p class="text-sm font-medium text-text-secondary mb-3">Make in India Initiative</p>
+                    <p class="text-text-tertiary leading-relaxed">
+                        Product leadership in indigenous digital forensics capabilities, driving technology 
+                        sovereignty and ecosystem development.
+                    </p>
+                </div>
+
+                <!-- CII Task Force -->
+                <div class="group bg-surface-dark border border-border-subtle rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="p-3 bg-accent-primary/10 rounded-lg text-accent-primary group-hover:bg-accent-primary/20 transition-colors">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                            </svg>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs font-semibold text-accent-primary bg-accent-primary/10 px-2 py-1 rounded">Policy Maker</div>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary group-hover:text-accent-primary transition-colors mb-2">CII Task Force</h3>
+                    <p class="text-sm font-medium text-text-secondary mb-3">Confederation of Indian Industry</p>
+                    <p class="text-text-tertiary leading-relaxed">
+                        Member of national policy dialogues shaping cyber resilience and industry standards 
+                        from 2019-2021.
+                    </p>
+                </div>
+
+                <!-- CHFI Committee -->
+                <div class="group bg-surface-dark border border-border-subtle rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="p-3 bg-accent-primary/10 rounded-lg text-accent-primary group-hover:bg-accent-primary/20 transition-colors">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs font-semibold text-accent-primary bg-accent-primary/10 px-2 py-1 rounded">4+ Years</div>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary group-hover:text-accent-primary transition-colors mb-2">CHFI Committee</h3>
+                    <p class="text-sm font-medium text-text-secondary mb-3">Certification Framework</p>
+                    <p class="text-text-tertiary leading-relaxed">
+                        Over 4 years of contribution to certification pathways and workforce development 
+                        standards in digital forensics.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Achievement Summary -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 animate-on-scroll">
+                <div class="text-center space-y-2">
+                    <div class="text-4xl font-bold text-accent-primary">3</div>
+                    <div class="text-text-tertiary">Major Awards</div>
+                    <div class="text-sm text-text-secondary">Army, NIA, CERT-In</div>
+                </div>
+                <div class="text-center space-y-2">
+                    <div class="text-4xl font-bold text-accent-primary">2</div>
+                    <div class="text-text-tertiary">Policy Committees</div>
+                    <div class="text-sm text-text-secondary">CII & CHFI</div>
+                </div>
+                <div class="text-center space-y-2">
+                    <div class="text-4xl font-bold text-accent-primary">1</div>
+                    <div class="text-text-tertiary">Product Line</div>
+                    <div class="text-sm text-text-secondary">DRONA Leadership</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="py-20 lg:py-32 bg-surface-near-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+            <!-- Section Header -->
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary">
+                    Publications & Research
+                </h2>
+                <div class="w-24 h-1 bg-accent-primary mx-auto"></div>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Thought leadership through research, publications, and international speaking engagements
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Publications -->
+                <div class="lg:col-span-8 space-y-8">
+                    <!-- Featured Publication -->
+                    <div class="bg-gradient-to-r from-accent-primary/10 to-accent-hover/10 border border-accent-primary/20 rounded-2xl p-8">
+                        <div class="flex items-start space-x-4 mb-6">
+                            <div class="p-3 bg-accent-primary/20 rounded-lg">
+                                <svg class="w-8 h-8 text-accent-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="inline-flex items-center px-3 py-1 bg-accent-primary text-white text-sm font-medium rounded-full mb-2">
+                                    Featured Publication
+                                </div>
+                                <h3 class="text-2xl font-bold text-text-primary mb-2">
+                                    Digital Forensics Journal (Digital4N6Journal)
+                                </h3>
+                                <p class="text-accent-primary font-medium">Founder & Editor • Ongoing</p>
+                            </div>
+                        </div>
+                        
+                        <p class="text-lg text-text-secondary leading-relaxed mb-6">
+                            As founder of Digital4N6Journal, Dr. Khadsare has created a venue for peer and practitioner 
+                            exchange. The journal elevates evidence-based practices, encourages rigorous reporting, and 
+                            highlights technology trends—such as cloud forensics, mobile device artifacts, and the evolving 
+                            landscape of live response.
+                        </p>
+                        
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-4">
+                                <div class="flex items-center space-x-2 text-text-tertiary">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                    <span class="text-sm">Peer-reviewed platform</span>
+                                </div>
+                                <div class="flex items-center space-x-2 text-text-tertiary">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                                    </svg>
+                                    <span class="text-sm">Ongoing publication</span>
+                                </div>
+                            </div>
+                            <a href="https://www.digital4n6journal.com" target="_blank" class="flex items-center space-x-2 text-accent-primary hover:text-accent-hover transition-colors">
+                                <span class="text-sm font-medium">Read Journal</span>
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Other Publications -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-semibold text-text-primary">Research Articles & Guides</h3>
+                        <div class="space-y-4">
+                            <div class="bg-surface-dark border border-border-subtle rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-300 group">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-text-primary group-hover:text-accent-primary transition-colors">
+                                            Evidence Collection and Chain of Custody
+                                        </h4>
+                                        <p class="text-sm text-text-secondary">Technical Article • 2023</p>
+                                    </div>
+                                </div>
+                                <p class="text-text-secondary mb-4 leading-relaxed">
+                                    Comprehensive guide on maintaining evidentiary integrity in digital investigations, 
+                                    emphasizing reproducibility and courtroom admissibility standards.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="text-sm text-text-tertiary">
+                                        Impact: Standardized investigative procedures
+                                    </div>
+                                    <button class="text-accent-primary hover:text-accent-hover transition-colors">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M19 19H5V5h7V3H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="bg-surface-dark border border-border-subtle rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-300 group">
+                                <div class="flex items-start justify-between mb-3">
+                                    <div>
+                                        <h4 class="text-lg font-semibold text-text-primary group-hover:text-accent-primary transition-colors">
+                                            Incident Response Orchestration
+                                        </h4>
+                                        <p class="text-sm text-text-secondary">Research Paper • 2022</p>
+                                    </div>
+                                </div>
+                                <p class="text-text-secondary mb-4 leading-relaxed">
+                                    Framework for coordinating complex incident response scenarios across 
+                                    organizational boundaries and jurisdictions.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="text-sm text-text-tertiary">
+                                        Impact: Cross-border collaboration protocols
+                                    </div>
+                                    <button class="text-accent-primary hover:text-accent-hover transition-colors">
+                                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M19 19H5V5h7V3H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Speaking Engagements -->
+                <div class="lg:col-span-4">
+                    <div class="sticky top-8 space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-text-primary mb-4">Speaking Engagements</h3>
+                            <p class="text-text-secondary mb-6">
+                                International conferences and platforms
+                            </p>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div class="bg-surface-dark border border-border-subtle rounded-lg p-4 shadow-card hover:shadow-card-hover transition-all duration-300 group">
+                                <div class="space-y-2">
+                                    <div class="flex items-center justify-between">
+                                        <h4 class="font-semibold text-text-primary group-hover:text-accent-primary transition-colors">
+                                            C0C0N
+                                        </h4>
+                                        <span class="text-xs text-text-tertiary">2023</span>
+                                    </div>
+                                    <p class="text-sm text-text-secondary">International Conference</p>
+                                    <p class="text-sm text-text-tertiary">DFIR Operations and Best Practices</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-surface-dark border border-border-subtle rounded-lg p-4 shadow-card hover:shadow-card-hover transition-all duration-300 group">
+                                <div class="space-y-2">
+                                    <div class="flex items-center justify-between">
+                                        <h4 class="font-semibold text-text-primary group-hover:text-accent-primary transition-colors">
+                                            HAKON
+                                        </h4>
+                                        <span class="text-xs text-text-tertiary">2022</span>
+                                    </div>
+                                    <p class="text-sm text-text-secondary">International Conference</p>
+                                    <p class="text-sm text-text-tertiary">Capacity Building and Cross-Border Collaboration</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-surface-dark border border-border-subtle rounded-lg p-4 shadow-card hover:shadow-card-hover transition-all duration-300 group">
+                                <div class="space-y-2">
+                                    <div class="flex items-center justify-between">
+                                        <h4 class="font-semibold text-text-primary group-hover:text-accent-primary transition-colors">
+                                            InfoSec Summit Asia
+                                        </h4>
+                                        <span class="text-xs text-text-tertiary">2016</span>
+                                    </div>
+                                    <p class="text-sm text-text-secondary">Regional Summit</p>
+                                    <p class="text-sm text-text-tertiary">Digital Forensics Evolution</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Research Impact Stats -->
+                        <div class="mt-8 bg-surface-dark border border-border-subtle rounded-2xl p-6">
+                            <h4 class="text-lg font-semibold text-text-primary mb-4 text-center">Research Impact</h4>
+                            <div class="grid grid-cols-2 gap-4 text-center">
+                                <div class="space-y-1">
+                                    <div class="text-xl font-bold text-accent-primary">1</div>
+                                    <div class="text-xs text-text-tertiary">Journal Founded</div>
+                                </div>
+                                <div class="space-y-1">
+                                    <div class="text-xl font-bold text-accent-primary">Multiple</div>
+                                    <div class="text-xs text-text-tertiary">Publications</div>
+                                </div>
+                                <div class="space-y-1">
+                                    <div class="text-xl font-bold text-accent-primary">5+</div>
+                                    <div class="text-xs text-text-tertiary">Speaking Events</div>
+                                </div>
+                                <div class="space-y-1">
+                                    <div class="text-xl font-bold text-accent-primary">Global</div>
+                                    <div class="text-xs text-text-tertiary">Reach</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Impact Section -->
+    <section id="impact" class="py-20 lg:py-32 bg-surface-near-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+            <!-- Section Header -->
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary">
+                    Professional Impact
+                </h2>
+                <div class="w-24 h-1 bg-accent-primary mx-auto"></div>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Building capability and developing talent pipelines across the global cybersecurity ecosystem
+                </p>
+            </div>
+
+            <!-- Impact Metrics -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="group bg-surface-dark border border-border-subtle rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 text-center">
+                    <div class="flex justify-center mb-4">
+                        <div class="p-4 bg-accent-primary/10 rounded-lg group-hover:bg-accent-primary/20 transition-colors">
+                            <svg class="w-8 h-8 text-accent-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-3xl font-bold text-accent-primary">100+</div>
+                        <div class="text-text-primary font-semibold">Professionals Mentored</div>
+                        <p class="text-text-tertiary text-sm leading-relaxed">
+                            Hundreds of cyber enthusiasts guided from foundational concepts to advanced DFIR practice
+                        </p>
+                    </div>
+                </div>
+
+                <div class="group bg-surface-dark border border-border-subtle rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 text-center">
+                    <div class="flex justify-center mb-4">
+                        <div class="p-4 bg-semantic-success/10 rounded-lg group-hover:bg-semantic-success/20 transition-colors">
+                            <svg class="w-8 h-8 text-semantic-success" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-3xl font-bold text-semantic-success">International</div>
+                        <div class="text-text-primary font-semibold">LEA Training</div>
+                        <p class="text-text-tertiary text-sm leading-relaxed">
+                            International law enforcement agencies trained with standardized methodologies
+                        </p>
+                    </div>
+                </div>
+
+                <div class="group bg-surface-dark border border-border-subtle rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 text-center">
+                    <div class="flex justify-center mb-4">
+                        <div class="p-4 bg-accent-hover/10 rounded-lg group-hover:bg-accent-hover/20 transition-colors">
+                            <svg class="w-8 h-8 text-accent-hover" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14zM5 6h5v5H5zm7 0h7v2h-7zm0 3h7v2h-7zM5 12h5v5H5zm7 0h7v5h-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-3xl font-bold text-accent-hover">Multiple</div>
+                        <div class="text-text-primary font-semibold">FDPs Delivered</div>
+                        <p class="text-text-tertiary text-sm leading-relaxed">
+                            Faculty Development Programs at prestigious institutes bridging theory and practice
+                        </p>
+                    </div>
+                </div>
+
+                <div class="group bg-surface-dark border border-border-subtle rounded-lg p-6 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 text-center">
+                    <div class="flex justify-center mb-4">
+                        <div class="p-4 bg-semantic-warning/10 rounded-lg group-hover:bg-semantic-warning/20 transition-colors">
+                            <svg class="w-8 h-8 text-semantic-warning" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-3xl font-bold text-semantic-warning">4+</div>
+                        <div class="text-text-primary font-semibold">Years CHFI Committee</div>
+                        <p class="text-text-tertiary text-sm leading-relaxed">
+                            Contribution to certification frameworks and workforce development standards
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training Philosophy -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="space-y-4">
+                        <h3 class="text-2xl md:text-3xl font-bold text-text-primary">
+                            Training Philosophy
+                        </h3>
+                        <div class="w-16 h-1 bg-accent-primary"></div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <p class="text-lg text-text-secondary leading-relaxed">
+                            Dr. Khadsare's mentorship philosophy emphasizes critical thinking, ethical grounding, 
+                            and documentation standards. His training ethos rests on three fundamental pillars that 
+                            ensure participants not only understand tools but how to collect, preserve, analyze, and 
+                            present evidence in a manner that withstands judicial scrutiny.
+                        </p>
+
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-4 p-4 bg-surface-hover rounded-lg border border-border-subtle">
+                                <div class="text-2xl">🎯</div>
+                                <div class="space-y-2">
+                                    <h4 class="font-semibold text-text-primary">Operational Rigor</h4>
+                                    <p class="text-text-secondary text-sm">Clear SOPs, chain-of-custody discipline, and repeatable processes</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4 p-4 bg-surface-hover rounded-lg border border-border-subtle">
+                                <div class="text-2xl">🔍</div>
+                                <div class="space-y-2">
+                                    <h4 class="font-semibold text-text-primary">Practical Scenarios</h4>
+                                    <p class="text-text-secondary text-sm">Case-driven exercises preparing teams for complex investigations</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4 p-4 bg-surface-hover rounded-lg border border-border-subtle">
+                                <div class="text-2xl">⚖️</div>
+                                <div class="space-y-2">
+                                    <h4 class="font-semibold text-text-primary">Ethical Frameworks</h4>
+                                    <p class="text-text-secondary text-sm">Emphasis on privacy, legality, and responsible investigative practices</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="relative">
+                        <div class="aspect-[4/5] rounded-2xl overflow-hidden border border-border-subtle shadow-card-hover bg-gradient-to-br from-accent-primary/10 to-accent-hover/5">
+                            <div class="w-full h-full flex items-center justify-center text-text-secondary">
+                                <div class="text-center">
+                                    <div class="w-20 h-20 mx-auto mb-4 rounded-lg bg-accent-primary/20 flex items-center justify-center">
+                                        <svg class="w-10 h-10 text-accent-primary" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="text-lg font-semibold">Training & Mentorship</p>
+                                    <p class="text-sm">Professional Development</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mentorship & Academic Contributions -->
+            <div class="bg-surface-dark border border-border-subtle rounded-2xl p-8 animate-on-scroll">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-4">
+                        <div class="aspect-[4/5] rounded-lg overflow-hidden border border-border-subtle shadow-card bg-gradient-to-br from-accent-primary/10 to-accent-hover/5">
+                            <div class="w-full h-full flex items-center justify-center text-text-secondary">
+                                <div class="text-center">
+                                    <div class="w-16 h-16 mx-auto mb-3 rounded-lg bg-accent-primary/20 flex items-center justify-center">
+                                        <svg class="w-8 h-8 text-accent-primary" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                        </svg>
+                                    </div>
+                                    <p class="text-sm font-semibold">Academic Excellence</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:col-span-8 space-y-6">
+                        <div class="space-y-4">
+                            <h3 class="text-2xl md:text-3xl font-bold text-text-primary">
+                                Mentorship & Academic Excellence
+                            </h3>
+                            <div class="w-16 h-1 bg-accent-primary"></div>
+                        </div>
+
+                        <div class="space-y-4 text-text-secondary">
+                            <p>
+                                Through FDPs at prestigious institutes, Dr. Khadsare equips educators with curricula 
+                                and tools that reflect current threats and technologies. He encourages academic-industry 
+                                collaboration, ensuring students learn both theory and practice.
+                            </p>
+                            
+                            <p>
+                                The result is a talent pipeline that is both deep and adaptable, prepared to meet the 
+                                demands of modern investigations and incident response. This systematic approach to 
+                                capability development has created exponential increases in investigative readiness 
+                                across jurisdictions.
+                            </p>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+                            <div class="text-center space-y-2">
+                                <div class="text-2xl font-bold text-accent-primary">100+</div>
+                                <div class="text-sm text-text-tertiary">Professionals Mentored</div>
+                            </div>
+                            <div class="text-center space-y-2">
+                                <div class="text-2xl font-bold text-accent-primary">Multiple</div>
+                                <div class="text-sm text-text-tertiary">FDPs Delivered</div>
+                            </div>
+                            <div class="text-center space-y-2">
+                                <div class="text-2xl font-bold text-accent-primary">Global</div>
+                                <div class="text-sm text-text-tertiary">Training Reach</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 lg:py-32 bg-surface-pure-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 animate-on-scroll">
+            <!-- Section Header -->
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-primary">
+                    Let's Connect
+                </h2>
+                <div class="w-24 h-1 bg-accent-primary mx-auto"></div>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    For professional inquiries, media engagements, or collaboration on DFIR initiatives, 
+                    please reach out through the following channels.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Contact Information -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-semibold text-text-primary">
+                            Professional Contact
+                        </h3>
+                        <p class="text-text-secondary leading-relaxed">
+                            For professional inquiries, media engagements, or collaboration on DFIR initiatives, 
+                            please reach out through the following channels. Dr. Khadsare is always open to 
+                            discussing cybersecurity challenges and opportunities for knowledge sharing.
+                        </p>
+                    </div>
+
+                    <!-- Contact Methods -->
+                    <div class="space-y-4">
+                        <a href="mailto:contact@systoolsgroup.com" class="group flex items-start space-x-4 p-4 bg-surface-dark border border-border-subtle rounded-lg hover:border-accent-primary/50 transition-all duration-300 hover:shadow-card-hover">
+                            <div class="p-2 bg-accent-primary/10 rounded-lg text-accent-primary group-hover:bg-accent-primary/20 transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1 space-y-1">
+                                <h4 class="font-semibold text-text-primary group-hover:text-accent-primary transition-colors">
+                                    Professional Inquiries
+                                </h4>
+                                <p class="text-sm text-text-tertiary">For collaboration and consulting</p>
+                                <p class="text-sm text-text-secondary font-medium">contact@systoolsgroup.com</p>
+                            </div>
+                            <svg class="w-4 h-4 text-text-tertiary group-hover:text-accent-primary transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 19H5V5h7V3H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                            </svg>
+                        </a>
+
+                        <a href="https://www.systoolsgroup.com" target="_blank" rel="noopener noreferrer" class="group flex items-start space-x-4 p-4 bg-surface-dark border border-border-subtle rounded-lg hover:border-accent-primary/50 transition-all duration-300 hover:shadow-card-hover">
+                            <div class="p-2 bg-accent-primary/10 rounded-lg text-accent-primary group-hover:bg-accent-primary/20 transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1 space-y-1">
+                                <h4 class="font-semibold text-text-primary group-hover:text-accent-primary transition-colors">
+                                    SysTools Official
+                                </h4>
+                                <p class="text-sm text-text-tertiary">Company website and services</p>
+                                <p class="text-sm text-text-secondary font-medium">www.systoolsgroup.com</p>
+                            </div>
+                            <svg class="w-4 h-4 text-text-tertiary group-hover:text-accent-primary transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 19H5V5h7V3H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                            </svg>
+                        </a>
+
+                        <a href="https://www.digital4n6journal.com" target="_blank" rel="noopener noreferrer" class="group flex items-start space-x-4 p-4 bg-surface-dark border border-border-subtle rounded-lg hover:border-accent-primary/50 transition-all duration-300 hover:shadow-card-hover">
+                            <div class="p-2 bg-accent-primary/10 rounded-lg text-accent-primary group-hover:bg-accent-primary/20 transition-colors">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1 space-y-1">
+                                <h4 class="font-semibold text-text-primary group-hover:text-accent-primary transition-colors">
+                                    Digital4N6Journal
+                                </h4>
+                                <p class="text-sm text-text-tertiary">Research and publications</p>
+                                <p class="text-sm text-text-secondary font-medium">www.digital4n6journal.com</p>
+                            </div>
+                            <svg class="w-4 h-4 text-text-tertiary group-hover:text-accent-primary transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 19H5V5h7V3H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Current Role -->
+                    <div class="bg-surface-dark border border-border-subtle rounded-lg p-6">
+                        <h4 class="font-semibold text-text-primary mb-3">Current Role</h4>
+                        <div class="space-y-2">
+                            <p class="text-accent-primary font-medium">CBO/CTO at SysTools</p>
+                            <p class="text-text-secondary text-sm">
+                                Strategic leadership and technology vision for digital forensics and incident response solutions
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Consultation Areas -->
+                    <div class="space-y-4">
+                        <h4 class="font-semibold text-text-primary">Areas of Expertise</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-accent-primary/10 text-accent-primary text-sm rounded-full border border-accent-primary/20">Digital Forensics & Incident Response</span>
+                            <span class="px-3 py-1 bg-accent-primary/10 text-accent-primary text-sm rounded-full border border-accent-primary/20">Cybersecurity Strategy & Governance</span>
+                            <span class="px-3 py-1 bg-accent-primary/10 text-accent-primary text-sm rounded-full border border-accent-primary/20">Threat Intelligence & Analysis</span>
+                            <span class="px-3 py-1 bg-accent-primary/10 text-accent-primary text-sm rounded-full border border-accent-primary/20">Incident Response Training</span>
+                            <span class="px-3 py-1 bg-accent-primary/10 text-accent-primary text-sm rounded-full border border-accent-primary/20">Forensic Tool Development</span>
+                            <span class="px-3 py-1 bg-accent-primary/10 text-accent-primary text-sm rounded-full border border-accent-primary/20">Policy & Standards Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="bg-surface-dark border border-border-subtle rounded-lg p-8 shadow-card">
+                        <h3 class="text-2xl font-semibold text-text-primary mb-6">
+                            Send a Message
+                        </h3>
+
+                        <form id="contactForm" class="space-y-6" action="mailto:contact@systoolsgroup.com" method="POST" enctype="text/plain">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-text-secondary mb-2">
+                                        Name *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        name="name"
+                                        required
+                                        className="w-full px-4 py-3 bg-surface-near-black border border-border-subtle rounded-lg text-text-primary placeholder-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors"
+                                        placeholder="Your full name"
+                                    />
+                                </div>
+
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-text-secondary mb-2">
+                                        Email *
+                                    </label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        required
+                                        className="w-full px-4 py-3 bg-surface-near-black border border-border-subtle rounded-lg text-text-primary placeholder-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors"
+                                        placeholder="your.email@company.com"
+                                    />
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="organization" class="block text-sm font-medium text-text-secondary mb-2">
+                                        Organization
+                                    </label>
+                                    <input
+                                        type="text"
+                                        id="organization"
+                                        name="organization"
+                                        className="w-full px-4 py-3 bg-surface-near-black border border-border-subtle rounded-lg text-text-primary placeholder-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors"
+                                        placeholder="Company or institution"
+                                    />
+                                </div>
+
+                                <div>
+                                    <label for="subject" class="block text-sm font-medium text-text-secondary mb-2">
+                                        Subject *
+                                    </label>
+                                    <select
+                                        id="subject"
+                                        name="subject"
+                                        required
+                                        className="w-full px-4 py-3 bg-surface-near-black border border-border-subtle rounded-lg text-text-primary focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors"
+                                    >
+                                        <option value="">Select a subject</option>
+                                        <option value="consultation">Consultation Request</option>
+                                        <option value="training">Training Opportunities</option>
+                                        <option value="collaboration">Collaboration</option>
+                                        <option value="speaking">Speaking Engagement</option>
+                                        <option value="media">Media Inquiry</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-text-secondary mb-2">
+                                    Message *
+                                </label>
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    required
+                                    rows={6}
+                                    className="w-full px-4 py-3 bg-surface-near-black border border-border-subtle rounded-lg text-text-primary placeholder-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors resize-vertical"
+                                    placeholder="Please describe your inquiry or how we can collaborate..."
+                                ></textarea>
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="w-full px-6 py-3 bg-accent-primary hover:bg-accent-hover text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-accent-glow flex items-center justify-center space-x-2"
+                            >
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                                <span>Send Message</span>
+                            </button>
+                        </form>
+
+                        <div class="mt-6 pt-6 border-t border-border-subtle">
+                            <p class="text-sm text-text-tertiary text-center">
+                                Response typically within 24-48 hours. For urgent matters, please use email directly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-20 pt-8 border-t border-border-subtle">
+            <div class="text-center text-text-tertiary">
+                <p class="text-sm">
+                    © 2025 Lt Col (Dr) Santosh Khadsare. All rights reserved. | 
+                    <span class="mx-2">•</span>
+                    Cybersecurity & Digital Forensics Expert
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Update navigation active state on scroll
+        window.addEventListener('scroll', () => {
+            const sections = ['hero', 'about', 'experience', 'achievements', 'publications', 'impact', 'contact'];
+            const scrollPosition = window.scrollY + 100;
+
+            sections.forEach(section => {
+                const element = document.getElementById(section);
+                if (element) {
+                    const { offsetTop, offsetHeight } = element;
+                    if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
+                        // Update navigation active state
+                        document.querySelectorAll('nav a').forEach(link => {
+                            link.classList.remove('text-accent-primary', 'border-b-2', 'border-accent-primary');
+                            link.classList.add('text-text-secondary', 'hover:text-text-primary');
+                        });
+                        
+                        const activeLink = document.querySelector(`nav a[href="#${section}"]`);
+                        if (activeLink) {
+                            activeLink.classList.remove('text-text-secondary', 'hover:text-text-primary');
+                            activeLink.classList.add('text-accent-primary', 'border-b-2', 'border-accent-primary');
+                        }
+                    }
+                }
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all elements with scroll animation
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const organization = formData.get('organization');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Create mailto link
+            const mailtoLink = `mailto:contact@systoolsgroup.com?subject=${encodeURIComponent(`Portfolio Contact: ${subject}`)}&body=${encodeURIComponent(
+                `Name: ${name}\nEmail: ${email}\nOrganization: ${organization}\n\nSubject: ${subject}\n\nMessage:\n${message}`
+            )}`;
+            
+            // Open email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            alert('Thank you for your message! Your email client will open with the message pre-filled.');
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+
+<script>
+/**
+ * Iframe 元素高亮注入脚本
+ * 需要在目标网站中引入此脚本来支持跨域 iframe 高亮功能
+ *
+ * 使用方法：
+ * 1. 将此脚本添加到目标网站的 HTML 中
+ * 2. 或通过浏览器扩展、用户脚本等方式注入
+ */
+
+(function () {
+  "use strict";
+
+  // 检查是否在 iframe 中
+  if (window.self === window.top) {
+    return; // 不在 iframe 中，不执行
+  }
+
+  // 检查是否已经初始化过
+  if (window.__iframeHighlightInitialized) {
+    return;
+  }
+  window.__iframeHighlightInitialized = true;
+  console.log("Iframe 高亮脚本已加载");
+
+  // 创建高亮覆盖层
+  var overlay = document.createElement("div");
+  overlay.id = "iframe-highlight-overlay";
+  overlay.style.cssText = "\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    pointer-events: none;\n    z-index: 999999;\n    overflow: hidden;\n  ";
+
+  // 创建悬停高亮框（虚线边框）
+  var highlightBox = document.createElement("div");
+  highlightBox.id = "iframe-highlight-box";
+  highlightBox.style.cssText = "\n    position: absolute;\n    border: 2px dashed #007AFF;\n    background: rgba(0, 122, 255, 0.08);\n    pointer-events: none;\n    display: none;\n    transition: all 0.1s ease;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);\n    border-radius: 2px;\n  ";
+
+  // 创建选中节点的常驻高亮框（实线边框）
+  var selectedBox = document.createElement("div");
+  selectedBox.id = "iframe-selected-box";
+  selectedBox.style.cssText = "\n    position: absolute;\n    border: 2px solid #007AFF;\n    pointer-events: none;\n    display: none;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 107, 53, 0.4);\n    border-radius: 2px;\n    z-index: 1000000;\n  ";
+
+  // 创建悬停标签显示
+  var tagLabel = document.createElement("div");
+  tagLabel.id = "iframe-tag-label";
+  tagLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 2px 6px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 2px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000001;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n    font-weight: 500;\n  ";
+
+  // 创建选中节点标签
+  var selectedLabel = document.createElement("div");
+  selectedLabel.id = "iframe-selected-label";
+  selectedLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 3px 8px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 3px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000002;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);\n    font-weight: 600;\n  ";
+  overlay.appendChild(highlightBox);
+  overlay.appendChild(selectedBox);
+  overlay.appendChild(tagLabel);
+  overlay.appendChild(selectedLabel);
+  document.body.appendChild(overlay);
+
+  // 存储当前选中的元素
+  var selectedElement = null;
+  var highlightEnabled = false;
+
+  // 更新选中元素的高亮显示
+  function updateSelectedHighlight(element) {
+    console.log("updateSelectedHighlight called with:", element);
+    if (!element) {
+      selectedBox.style.display = "none";
+      selectedLabel.style.display = "none";
+      selectedElement = null;
+      console.log("Cleared selected highlight");
+      return;
+    }
+    selectedElement = element;
+    var rect = element.getBoundingClientRect();
+    console.log("Selected element rect:", rect);
+
+    // 更新选中高亮框位置
+    selectedBox.style.display = "block";
+    selectedBox.style.left = "".concat(rect.left - 2, "px");
+    selectedBox.style.top = "".concat(rect.top - 2, "px");
+    selectedBox.style.width = "".concat(rect.width + 4, "px");
+    selectedBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新选中标签位置和内容
+    selectedLabel.style.display = "block";
+    selectedLabel.textContent = "\u2713 <".concat(element.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 28;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 5) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    var labelWidth = selectedLabel.offsetWidth || 100; // 预估宽度
+    if (labelLeft + labelWidth > window.innerWidth - 10) {
+      labelLeft = window.innerWidth - labelWidth - 10;
+    }
+    selectedLabel.style.left = "".concat(Math.max(5, labelLeft), "px");
+    selectedLabel.style.top = "".concat(labelTop, "px");
+    console.log("Selected highlight positioned at:", {
+      left: selectedBox.style.left,
+      top: selectedBox.style.top,
+      width: selectedBox.style.width,
+      height: selectedBox.style.height
+    });
+  }
+  function getElementSelector(element) {
+    if (!(element instanceof Element)) throw new Error('Argument must be a DOM element');
+    var segments = [];
+    var current = element;
+    while (current !== document.documentElement) {
+      var selector = '';
+      // 优先检查唯一ID
+      if (current.id && document.querySelectorAll("#".concat(current.id)).length === 1) {
+        segments.unshift("#".concat(current.id));
+        break; // ID唯一，无需继续向上
+      }
+
+      // 生成类名选择器（取第一个有效类名）
+      var classes = Array.from(current.classList).filter(function (c) {
+        return !c.startsWith('js-');
+      });
+      var className = classes.length > 0 ? ".".concat(classes[0]) : '';
+
+      // 生成位置索引（nth-child）
+      var tag = current.tagName.toLowerCase();
+      if (!className) {
+        var siblings = Array.from(current.parentNode.children);
+        var index = siblings.findIndex(function (el) {
+          return el === current;
+        }) + 1;
+        selector = "".concat(tag, ":nth-child(").concat(index, ")");
+      } else {
+        selector = className;
+      }
+      segments.unshift(selector);
+      current = current.parentElement;
+    }
+
+    // 处理根元素
+    if (current === document.documentElement) {
+      segments.unshift('html');
+    }
+    return segments.join(' > ');
+  }
+
+  // 获取元素文本内容
+  function getElementText(element) {
+    var _element$textContent;
+    if (element.tagName === "INPUT") {
+      return element.value || element.placeholder || "";
+    }
+    if (element.tagName === "TEXTAREA") {
+      return element.value || element.placeholder || "";
+    }
+    var text = ((_element$textContent = element.textContent) === null || _element$textContent === void 0 ? void 0 : _element$textContent.trim()) || "";
+    return text.length > 50 ? text.substring(0, 50) + "..." : text;
+  }
+
+  // 获取元素属性信息
+  function getElementAttributes(element) {
+    var attrs = {};
+    for (var i = 0; i < element.attributes.length; i++) {
+      var attr = element.attributes[i];
+      attrs[attr.name] = attr.value;
+    }
+    return attrs;
+  }
+
+  // 鼠标悬停事件处理
+  function handleMouseOver(e) {
+    if (!highlightEnabled) return;
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免高亮 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 如果是已选中的元素，不显示悬停高亮
+    if (target === selectedElement) {
+      highlightBox.style.display = "none";
+      tagLabel.style.display = "none";
+      return;
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+
+    // 更新悬停高亮框位置
+    highlightBox.style.display = "block";
+    highlightBox.style.left = "".concat(rect.left - 2, "px");
+    highlightBox.style.top = "".concat(rect.top - 2, "px");
+    highlightBox.style.width = "".concat(rect.width + 4, "px");
+    highlightBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新标签位置和内容
+    tagLabel.style.display = "block";
+    tagLabel.textContent = "<".concat(target.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 22;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 0) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    if (labelLeft + tagLabel.offsetWidth > window.innerWidth) {
+      labelLeft = window.innerWidth - tagLabel.offsetWidth - 5;
+    }
+    tagLabel.style.left = "".concat(Math.max(0, labelLeft), "px");
+    tagLabel.style.top = "".concat(labelTop, "px");
+
+    // 发送消息到父窗口
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 鼠标离开事件处理
+  function handleMouseOut(e) {
+    if (!highlightEnabled) return;
+    var relatedTarget = e.relatedTarget;
+
+    // 如果鼠标移动到高亮相关元素上，不隐藏高亮
+    if (relatedTarget && (relatedTarget === highlightBox || relatedTarget === tagLabel || relatedTarget === overlay || relatedTarget === selectedBox || relatedTarget === selectedLabel)) {
+      return;
+    }
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: null,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 点击事件处理
+  function handleClick(e) {
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免处理 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 检查是否是交互元素，这些元素需要保留默认行为
+    var isInteractiveElement = ['input', 'textarea', 'select', 'button', 'a'].includes(target.tagName.toLowerCase());
+
+    // 如果高亮功能启用，对于非交互元素阻止默认行为和事件传播
+    if (highlightEnabled) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+    console.log("Element clicked:", {
+      tagName: target.tagName,
+      selector: selector,
+      rect: rect
+    });
+
+    // 立即更新选中高亮
+    updateSelectedHighlight(target);
+
+    // 隐藏悬停高亮，因为现在是选中状态
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-click",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 监听来自父窗口的消息
+  function handleParentMessage(event) {
+    console.log("Received message from parent:", event.data);
+    if (event.data.type === "iframe-highlight-toggle") {
+      var enabled = event.data.enabled;
+      console.log("Highlight toggle:", enabled);
+      if (enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "enable-iframe-highlight") {
+      console.log("Enable iframe highlight");
+      enableHighlight();
+    } else if (event.data.type === "disable-iframe-highlight") {
+      console.log("Disable iframe highlight");
+      disableHighlight();
+    } else if (event.data.type === "toggle-iframe-highlight") {
+      var _enabled = event.data.enabled !== undefined ? event.data.enabled : !highlightEnabled;
+      console.log("Toggle iframe highlight to:", _enabled);
+      if (_enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "update-selected-element") {
+      var selector = event.data.selector;
+      console.log("Update selected element with selector:", selector);
+      if (selector) {
+        try {
+          var element = document.querySelector(selector);
+          console.log("Found element by selector:", element);
+          updateSelectedHighlight(element);
+        } catch (error) {
+          console.warn("Failed to select element:", error);
+          updateSelectedHighlight(null);
+        }
+      } else {
+        updateSelectedHighlight(null);
+      }
+    } else if (event.data.type === "clear-selected-element") {
+      console.log("Clear selected element");
+      updateSelectedHighlight(null);
+    }
+  }
+
+  // 启用高亮功能
+  function enableHighlight() {
+    console.log("Enabling highlight");
+    document.addEventListener("mouseover", handleMouseOver, true);
+    document.addEventListener("mouseout", handleMouseOut, true);
+    document.addEventListener("click", handleClick, true);
+    highlightEnabled = true;
+    overlay.style.display = "block";
+  }
+
+  // 禁用高亮功能
+  function disableHighlight() {
+    console.log("Disabling highlight");
+    highlightEnabled = false;
+    // 保持事件监听器，但通过 highlightEnabled 变量控制行为
+    // 这样可以保留选中状态的显示
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    // 不隐藏 selectedBox 和 selectedLabel，保留选中状态
+  }
+
+  // 完全禁用高亮功能（移除所有监听器）
+  function fullyDisableHighlight() {
+    console.log("Fully disabling highlight");
+    highlightEnabled = false;
+    document.removeEventListener("mouseover", handleMouseOver, true);
+    document.removeEventListener("mouseout", handleMouseOut, true);
+    document.removeEventListener("click", handleClick, true);
+    overlay.style.display = "none";
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    selectedBox.style.display = "none";
+    selectedLabel.style.display = "none";
+  }
+
+  // 添加事件监听
+  enableHighlight();
+  window.addEventListener("message", handleParentMessage);
+
+  // 暴露全局函数供外部调用
+  window.__iframeHighlightControl = {
+    enable: enableHighlight,
+    disable: disableHighlight,
+    fullyDisable: fullyDisableHighlight,
+    isEnabled: function isEnabled() {
+      return highlightEnabled;
+    },
+    getSelectedElement: function getSelectedElement() {
+      return selectedElement;
+    },
+    updateSelected: updateSelectedHighlight,
+    // 通过消息发送开关控制
+    sendToggleMessage: function sendToggleMessage(enabled) {
+      window.parent.postMessage({
+        type: 'iframe-highlight-status',
+        enabled: enabled || highlightEnabled,
+        source: 'iframe-highlight-injector'
+      }, '*');
+    }
+  };
+
+  // 通知父窗口脚本已加载
+  try {
+    window.parent.postMessage({
+      type: "iframe-highlight-ready",
+      data: {
+        url: window.location.href,
+        userAgent: navigator.userAgent,
+        timestamp: Date.now()
+      },
+      source: "iframe-highlight-injector"
+    }, "*");
+  } catch (error) {
+    console.warn("无法发送就绪消息到父窗口:", error);
+  }
+
+  // 清理函数
+  window.__iframeHighlightCleanup = function () {
+    fullyDisableHighlight();
+    window.removeEventListener("message", handleParentMessage);
+    if (overlay.parentElement) {
+      overlay.parentElement.removeChild(overlay);
+    }
+    delete window.__iframeHighlightInitialized;
+    delete window.__iframeHighlightCleanup;
+  };
+})();
+</script>
+
+<script>
+/**
+ * Iframe 元素高亮注入脚本
+ * 需要在目标网站中引入此脚本来支持跨域 iframe 高亮功能
+ *
+ * 使用方法：
+ * 1. 将此脚本添加到目标网站的 HTML 中
+ * 2. 或通过浏览器扩展、用户脚本等方式注入
+ */
+
+(function () {
+  "use strict";
+
+  // 检查是否在 iframe 中
+  if (window.self === window.top) {
+    return; // 不在 iframe 中，不执行
+  }
+
+  // 检查是否已经初始化过
+  if (window.__iframeHighlightInitialized) {
+    return;
+  }
+  window.__iframeHighlightInitialized = true;
+  console.log("Iframe 高亮脚本已加载");
+
+  // 创建高亮覆盖层
+  var overlay = document.createElement("div");
+  overlay.id = "iframe-highlight-overlay";
+  overlay.style.cssText = "\n    position: fixed;\n    top: 0;\n    left: 0;\n    width: 100vw;\n    height: 100vh;\n    pointer-events: none;\n    z-index: 999999;\n    overflow: hidden;\n  ";
+
+  // 创建悬停高亮框（虚线边框）
+  var highlightBox = document.createElement("div");
+  highlightBox.id = "iframe-highlight-box";
+  highlightBox.style.cssText = "\n    position: absolute;\n    border: 2px dashed #007AFF;\n    background: rgba(0, 122, 255, 0.08);\n    pointer-events: none;\n    display: none;\n    transition: all 0.1s ease;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.8);\n    border-radius: 2px;\n  ";
+
+  // 创建选中节点的常驻高亮框（实线边框）
+  var selectedBox = document.createElement("div");
+  selectedBox.id = "iframe-selected-box";
+  selectedBox.style.cssText = "\n    position: absolute;\n    border: 2px solid #007AFF;\n    pointer-events: none;\n    display: none;\n    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 8px rgba(255, 107, 53, 0.4);\n    border-radius: 2px;\n    z-index: 1000000;\n  ";
+
+  // 创建悬停标签显示
+  var tagLabel = document.createElement("div");
+  tagLabel.id = "iframe-tag-label";
+  tagLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 2px 6px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 2px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000001;\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);\n    font-weight: 500;\n  ";
+
+  // 创建选中节点标签
+  var selectedLabel = document.createElement("div");
+  selectedLabel.id = "iframe-selected-label";
+  selectedLabel.style.cssText = "\n    position: absolute;\n    background: #007AFF;\n    color: white;\n    padding: 3px 8px;\n    font-size: 11px;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;\n    border-radius: 3px;\n    pointer-events: none;\n    display: none;\n    white-space: nowrap;\n    z-index: 1000002;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);\n    font-weight: 600;\n  ";
+  overlay.appendChild(highlightBox);
+  overlay.appendChild(selectedBox);
+  overlay.appendChild(tagLabel);
+  overlay.appendChild(selectedLabel);
+  document.body.appendChild(overlay);
+
+  // 存储当前选中的元素
+  var selectedElement = null;
+  var highlightEnabled = false;
+
+  // 更新选中元素的高亮显示
+  function updateSelectedHighlight(element) {
+    console.log("updateSelectedHighlight called with:", element);
+    if (!element) {
+      selectedBox.style.display = "none";
+      selectedLabel.style.display = "none";
+      selectedElement = null;
+      console.log("Cleared selected highlight");
+      return;
+    }
+    selectedElement = element;
+    var rect = element.getBoundingClientRect();
+    console.log("Selected element rect:", rect);
+
+    // 更新选中高亮框位置
+    selectedBox.style.display = "block";
+    selectedBox.style.left = "".concat(rect.left - 2, "px");
+    selectedBox.style.top = "".concat(rect.top - 2, "px");
+    selectedBox.style.width = "".concat(rect.width + 4, "px");
+    selectedBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新选中标签位置和内容
+    selectedLabel.style.display = "block";
+    selectedLabel.textContent = "\u2713 <".concat(element.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 28;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 5) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    var labelWidth = selectedLabel.offsetWidth || 100; // 预估宽度
+    if (labelLeft + labelWidth > window.innerWidth - 10) {
+      labelLeft = window.innerWidth - labelWidth - 10;
+    }
+    selectedLabel.style.left = "".concat(Math.max(5, labelLeft), "px");
+    selectedLabel.style.top = "".concat(labelTop, "px");
+    console.log("Selected highlight positioned at:", {
+      left: selectedBox.style.left,
+      top: selectedBox.style.top,
+      width: selectedBox.style.width,
+      height: selectedBox.style.height
+    });
+  }
+  function getElementSelector(element) {
+    if (!(element instanceof Element)) throw new Error('Argument must be a DOM element');
+    var segments = [];
+    var current = element;
+    while (current !== document.documentElement) {
+      var selector = '';
+      // 优先检查唯一ID
+      if (current.id && document.querySelectorAll("#".concat(current.id)).length === 1) {
+        segments.unshift("#".concat(current.id));
+        break; // ID唯一，无需继续向上
+      }
+
+      // 生成类名选择器（取第一个有效类名）
+      var classes = Array.from(current.classList).filter(function (c) {
+        return !c.startsWith('js-');
+      });
+      var className = classes.length > 0 ? ".".concat(classes[0]) : '';
+
+      // 生成位置索引（nth-child）
+      var tag = current.tagName.toLowerCase();
+      if (!className) {
+        var siblings = Array.from(current.parentNode.children);
+        var index = siblings.findIndex(function (el) {
+          return el === current;
+        }) + 1;
+        selector = "".concat(tag, ":nth-child(").concat(index, ")");
+      } else {
+        selector = className;
+      }
+      segments.unshift(selector);
+      current = current.parentElement;
+    }
+
+    // 处理根元素
+    if (current === document.documentElement) {
+      segments.unshift('html');
+    }
+    return segments.join(' > ');
+  }
+
+  // 获取元素文本内容
+  function getElementText(element) {
+    var _element$textContent;
+    if (element.tagName === "INPUT") {
+      return element.value || element.placeholder || "";
+    }
+    if (element.tagName === "TEXTAREA") {
+      return element.value || element.placeholder || "";
+    }
+    var text = ((_element$textContent = element.textContent) === null || _element$textContent === void 0 ? void 0 : _element$textContent.trim()) || "";
+    return text.length > 50 ? text.substring(0, 50) + "..." : text;
+  }
+
+  // 获取元素属性信息
+  function getElementAttributes(element) {
+    var attrs = {};
+    for (var i = 0; i < element.attributes.length; i++) {
+      var attr = element.attributes[i];
+      attrs[attr.name] = attr.value;
+    }
+    return attrs;
+  }
+
+  // 鼠标悬停事件处理
+  function handleMouseOver(e) {
+    if (!highlightEnabled) return;
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免高亮 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 如果是已选中的元素，不显示悬停高亮
+    if (target === selectedElement) {
+      highlightBox.style.display = "none";
+      tagLabel.style.display = "none";
+      return;
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+
+    // 更新悬停高亮框位置
+    highlightBox.style.display = "block";
+    highlightBox.style.left = "".concat(rect.left - 2, "px");
+    highlightBox.style.top = "".concat(rect.top - 2, "px");
+    highlightBox.style.width = "".concat(rect.width + 4, "px");
+    highlightBox.style.height = "".concat(rect.height + 4, "px");
+
+    // 更新标签位置和内容
+    tagLabel.style.display = "block";
+    tagLabel.textContent = "<".concat(target.tagName.toLowerCase(), ">");
+
+    // 计算标签位置，确保不超出视窗
+    var labelTop = rect.top - 22;
+    var labelLeft = rect.left;
+
+    // 如果标签会超出顶部，显示在元素下方
+    if (labelTop < 0) {
+      labelTop = rect.bottom + 5;
+    }
+
+    // 如果标签会超出右侧，向左调整
+    if (labelLeft + tagLabel.offsetWidth > window.innerWidth) {
+      labelLeft = window.innerWidth - tagLabel.offsetWidth - 5;
+    }
+    tagLabel.style.left = "".concat(Math.max(0, labelLeft), "px");
+    tagLabel.style.top = "".concat(labelTop, "px");
+
+    // 发送消息到父窗口
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 鼠标离开事件处理
+  function handleMouseOut(e) {
+    if (!highlightEnabled) return;
+    var relatedTarget = e.relatedTarget;
+
+    // 如果鼠标移动到高亮相关元素上，不隐藏高亮
+    if (relatedTarget && (relatedTarget === highlightBox || relatedTarget === tagLabel || relatedTarget === overlay || relatedTarget === selectedBox || relatedTarget === selectedLabel)) {
+      return;
+    }
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-hover",
+        data: null,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 点击事件处理
+  function handleClick(e) {
+    var target = e.target;
+    if (!target || target === overlay || target === highlightBox || target === tagLabel || target === selectedBox || target === selectedLabel) {
+      return;
+    }
+
+    // 避免处理 html 和 body 元素
+    if (target === document.documentElement || target === document.body) {
+      return;
+    }
+
+    // 检查是否是交互元素，这些元素需要保留默认行为
+    var isInteractiveElement = ['input', 'textarea', 'select', 'button', 'a'].includes(target.tagName.toLowerCase());
+
+    // 如果高亮功能启用，对于非交互元素阻止默认行为和事件传播
+    if (highlightEnabled) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    var rect = target.getBoundingClientRect();
+    var selector = getElementSelector(target);
+    var text = getElementText(target);
+    var attributes = getElementAttributes(target);
+    console.log("Element clicked:", {
+      tagName: target.tagName,
+      selector: selector,
+      rect: rect
+    });
+
+    // 立即更新选中高亮
+    updateSelectedHighlight(target);
+
+    // 隐藏悬停高亮，因为现在是选中状态
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    var elementInfo = {
+      tagName: target.tagName.toLowerCase(),
+      rect: {
+        left: rect.left,
+        top: rect.top,
+        right: rect.right,
+        bottom: rect.bottom,
+        width: rect.width,
+        height: rect.height,
+        x: rect.x,
+        y: rect.y
+      },
+      selector: selector,
+      text: text,
+      attributes: attributes,
+      url: window.location.href,
+      path: window.location.pathname,
+      timestamp: Date.now()
+    };
+    try {
+      window.parent.postMessage({
+        type: "iframe-element-click",
+        data: elementInfo,
+        source: "iframe-highlight-injector"
+      }, "*");
+    } catch (error) {
+      console.warn("无法发送消息到父窗口:", error);
+    }
+  }
+
+  // 监听来自父窗口的消息
+  function handleParentMessage(event) {
+    console.log("Received message from parent:", event.data);
+    if (event.data.type === "iframe-highlight-toggle") {
+      var enabled = event.data.enabled;
+      console.log("Highlight toggle:", enabled);
+      if (enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "enable-iframe-highlight") {
+      console.log("Enable iframe highlight");
+      enableHighlight();
+    } else if (event.data.type === "disable-iframe-highlight") {
+      console.log("Disable iframe highlight");
+      disableHighlight();
+    } else if (event.data.type === "toggle-iframe-highlight") {
+      var _enabled = event.data.enabled !== undefined ? event.data.enabled : !highlightEnabled;
+      console.log("Toggle iframe highlight to:", _enabled);
+      if (_enabled) {
+        enableHighlight();
+      } else {
+        disableHighlight();
+      }
+    } else if (event.data.type === "update-selected-element") {
+      var selector = event.data.selector;
+      console.log("Update selected element with selector:", selector);
+      if (selector) {
+        try {
+          var element = document.querySelector(selector);
+          console.log("Found element by selector:", element);
+          updateSelectedHighlight(element);
+        } catch (error) {
+          console.warn("Failed to select element:", error);
+          updateSelectedHighlight(null);
+        }
+      } else {
+        updateSelectedHighlight(null);
+      }
+    } else if (event.data.type === "clear-selected-element") {
+      console.log("Clear selected element");
+      updateSelectedHighlight(null);
+    }
+  }
+
+  // 启用高亮功能
+  function enableHighlight() {
+    console.log("Enabling highlight");
+    document.addEventListener("mouseover", handleMouseOver, true);
+    document.addEventListener("mouseout", handleMouseOut, true);
+    document.addEventListener("click", handleClick, true);
+    highlightEnabled = true;
+    overlay.style.display = "block";
+  }
+
+  // 禁用高亮功能
+  function disableHighlight() {
+    console.log("Disabling highlight");
+    highlightEnabled = false;
+    // 保持事件监听器，但通过 highlightEnabled 变量控制行为
+    // 这样可以保留选中状态的显示
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    // 不隐藏 selectedBox 和 selectedLabel，保留选中状态
+  }
+
+  // 完全禁用高亮功能（移除所有监听器）
+  function fullyDisableHighlight() {
+    console.log("Fully disabling highlight");
+    highlightEnabled = false;
+    document.removeEventListener("mouseover", handleMouseOver, true);
+    document.removeEventListener("mouseout", handleMouseOut, true);
+    document.removeEventListener("click", handleClick, true);
+    overlay.style.display = "none";
+    highlightBox.style.display = "none";
+    tagLabel.style.display = "none";
+    selectedBox.style.display = "none";
+    selectedLabel.style.display = "none";
+  }
+
+  // 添加事件监听
+  enableHighlight();
+  window.addEventListener("message", handleParentMessage);
+
+  // 暴露全局函数供外部调用
+  window.__iframeHighlightControl = {
+    enable: enableHighlight,
+    disable: disableHighlight,
+    fullyDisable: fullyDisableHighlight,
+    isEnabled: function isEnabled() {
+      return highlightEnabled;
+    },
+    getSelectedElement: function getSelectedElement() {
+      return selectedElement;
+    },
+    updateSelected: updateSelectedHighlight,
+    // 通过消息发送开关控制
+    sendToggleMessage: function sendToggleMessage(enabled) {
+      window.parent.postMessage({
+        type: 'iframe-highlight-status',
+        enabled: enabled || highlightEnabled,
+        source: 'iframe-highlight-injector'
+      }, '*');
+    }
+  };
+
+  // 通知父窗口脚本已加载
+  try {
+    window.parent.postMessage({
+      type: "iframe-highlight-ready",
+      data: {
+        url: window.location.href,
+        userAgent: navigator.userAgent,
+        timestamp: Date.now()
+      },
+      source: "iframe-highlight-injector"
+    }, "*");
+  } catch (error) {
+    console.warn("无法发送就绪消息到父窗口:", error);
+  }
+
+  // 清理函数
+  window.__iframeHighlightCleanup = function () {
+    fullyDisableHighlight();
+    window.removeEventListener("message", handleParentMessage);
+    if (overlay.parentElement) {
+      overlay.parentElement.removeChild(overlay);
+    }
+    delete window.__iframeHighlightInitialized;
+    delete window.__iframeHighlightCleanup;
+  };
+})();
+</script>
+</body>
+</html>

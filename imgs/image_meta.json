@@ -1,0 +1,340 @@
+[
+  {
+    "query": "A professional image related to cybersecurity research publications or journal articles",
+    "image_info": {
+      "url": "https://kevincurran.org/wp-content/uploads/2020/06/Capture-3.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 161651,
+      "width": 712,
+      "height": 769,
+      "total_pixels": 547528,
+      "basic_score": 0.8729695450022354,
+      "file_name": "cybersecurity_journal_publication_computer_fraud_security.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is highly relevant as it displays the cover of a professional journal titled 'Computer Fraud & Security', featuring articles directly related to cybersecurity research topics. The clarity is excellent, allowing all text and details to be read easily. There are no intrusive watermarks, only the publisher's logo as part of the original design. The overall quality and composition are very professional, making it an ideal match for the prompt.",
+      "file_name": "cybersecurity_journal_publication_computer_fraud_security.jpg",
+      "caption": "A professional cover of the 'Computer Fraud & Security' journal from June 2020, published by Elsevier. The cover highlights featured articles including 'The rise of telemedicine: how to mitigate potential fraud', 'Removing a false sense of (open source) security', and 'Cyber security and the remote workforce', along with a 'Contents' section listing various articles related to cybersecurity and digital threats, making it an exemplary representation of cybersecurity research publications.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A professional image related to cybersecurity research publications or journal articles",
+    "image_info": {
+      "url": "https://blog.oncamgrandeye.com/hs-fs/hubfs/Imported_Blog_Media/Screenshot-2019-09-06-at-10_57_40.png?width=571&height=800&name=Screenshot-2019-09-06-at-10_57_40.png",
+      "img_format": "PNG",
+      "mode": "P",
+      "file_size": 133426,
+      "width": 571,
+      "height": 800,
+      "total_pixels": 456800,
+      "basic_score": 0.8351269038053711,
+      "file_name": "cybersecurity_awareness_journal_article_oncam.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 85.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image is a highly relevant scanned page from a professional journal or publication, featuring an article directly discussing 'cyber security awareness,' which perfectly matches the search query and prompt. The text is clear and readable, and there are no watermarks. The overall quality is professional and suitable for use.",
+      "file_name": "cybersecurity_awareness_journal_article_oncam.jpg",
+      "caption": "A scanned page from a professional journal or magazine featuring an article titled 'THE LAST WORD WITH...' Jon Marsh, VP Product at Oncam, discussing the importance of greater cybersecurity awareness and where the industry is headed. The page includes a photograph of Jon Marsh, alongside detailed text sections covering trends in cybersecurity, video intelligence, data protection, and technology partnerships. The content is presented in a multi-column layout with highlighted sections.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A professional image related to cybersecurity research publications or journal articles",
+    "image_info": {
+      "url": "https://covers.tandf.co.uk/og/TSEC.png",
+      "img_format": "PNG",
+      "mode": "RGBA",
+      "file_size": 318702,
+      "width": 1114,
+      "height": 583,
+      "total_pixels": 649462,
+      "basic_score": 0.8978048631342738,
+      "file_name": "journal_of_cyber_security_technology_publication.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is perfectly relevant to the search query, explicitly featuring the 'Journal of Cyber Security Technology'. It demonstrates excellent clarity with sharp text and visuals, and contains no watermarks. The professional layout and design contribute to a high overall quality, making it ideal for the prompt's requirements.",
+      "file_name": "journal_of_cyber_security_technology_publication.jpg",
+      "caption": "A professional image showcasing the cover of the 'Journal of Cyber Security Technology', published by Taylor & Francis Group. The journal cover features lines of code and a digital world map, symbolizing global connectivity and cyber defense. The title is also prominently displayed next to the journal cover on a clean white background.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A professional image related to cybersecurity research publications or journal articles",
+    "image_info": {
+      "url": "https://ars.els-cdn.com/content/image/X27729184.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 441484,
+      "width": 576,
+      "height": 768,
+      "total_pixels": 442368,
+      "basic_score": 0.8699096159050169,
+      "file_name": "cybersecurity-journal-cover-digital-eye-code.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 100.0,
+      "watermark_score": 100.0,
+      "overall_score": 100.0,
+      "explanation": "The image is perfectly relevant as it is a journal cover explicitly titled 'Cyber Security and Applications,' directly addressing 'cybersecurity publications journal articles.' It demonstrates excellent clarity, professional composition, and clear branding from legitimate publishers without any obstructive watermarks.",
+      "file_name": "cybersecurity-journal-cover-digital-eye-code.jpg",
+      "caption": "A professional journal cover for 'Cyber Security and Applications' (Volume 3 • 2025, ISSN: 2772-9184) from KeAi and ScienceDirect. The design features a close-up of a human eye with a futuristic, digital overlay on the iris, symbolizing advanced technology and security. The background displays glowing abstract code and text, including the word 'LOCKED,' set against a dark backdrop with vibrant orange and blue light effects, conveying a sense of digital complexity and protection.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A professional graphic showing cybersecurity career progression or digital forensics timeline",
+    "image_info": {
+      "url": "https://www.provendata.com/wp-content/uploads/2020/07/DIGITAL-FORENSICS-PROCESS-1024x647.png",
+      "img_format": "PNG",
+      "mode": "P",
+      "file_size": 42347,
+      "width": 1024,
+      "height": 647,
+      "total_pixels": 662528,
+      "basic_score": 0.8777461081514941,
+      "file_name": "digital_forensics_investigation_5_stages_infographic.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 90.0,
+      "watermark_score": 75.0,
+      "overall_score": 88.0,
+      "explanation": "The image is a highly relevant infographic detailing the five stages of a digital forensics investigation, directly matching the 'digital forensics timeline infographic' aspect of the search query and prompt. The clarity of text and icons is excellent, and the overall design is professional. A company logo is present at the bottom, slightly lowering the watermark score.",
+      "file_name": "digital_forensics_investigation_5_stages_infographic.jpg",
+      "caption": "An infographic titled 'The 5 stages of a digital forensics investigation,' visually outlining the sequential process: 1. Identification, 2. Preservation, 3. Analysis, 4. Documentation, and 5. Presentation. Each stage features a descriptive text and a corresponding icon within a blue circle, set against a light grey background with a dark header. The 'PROVEN DATA' logo is visible at the bottom center.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A professional graphic showing cybersecurity career progression or digital forensics timeline",
+    "image_info": {
+      "url": "https://www.slideteam.net/media/catalog/product/cache/1280x720/s/i/six_months_digital_forensic_science_roadmap_with_analysis_and_documentation_slide01.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 54507,
+      "width": 960,
+      "height": 720,
+      "total_pixels": 691200,
+      "basic_score": 0.8967204802865474,
+      "file_name": "digital-forensics-six-months-roadmap-timeline-infographic.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 90.0,
+      "overall_score": 95.0,
+      "explanation": "The image is a perfect match for the 'digital forensics timeline infographic' aspect of the search query and prompt. It clearly depicts a six-month digital forensic science roadmap with distinct phases and tasks. The graphic is highly professional, clean, and easy to read, with excellent clarity. There is a small template-related text at the bottom, but no obstructive watermarks.",
+      "file_name": "digital-forensics-six-months-roadmap-timeline-infographic.jpg",
+      "caption": "A professional infographic illustrating a six-month digital forensic science roadmap, detailing key phases such as Identification, Preservation, Analysis, Documentation, and Presentation. The timeline outlines specific tasks for each month, including classifying investigation purpose, securing data, processing results, and documenting evidence, providing a clear visual representation of the digital forensics workflow.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A professional image showing cybersecurity leadership impact, metrics, or professional achievements",
+    "image_info": {
+      "url": "https://www.cybersaint.io/hs-fs/hubfs/Ongoing%20Risk%20and%20Remediation%20Reporting.webp?width=1282&height=730&name=Ongoing%20Risk%20and%20Remediation%20Reporting.webp",
+      "img_format": "PNG",
+      "mode": "P",
+      "file_size": 94012,
+      "width": 1282,
+      "height": 730,
+      "total_pixels": 935860,
+      "basic_score": 0.920186284544223,
+      "file_name": "cybersecurity_leadership_impact_metrics_dashboard_charts.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 90.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is highly relevant to the search query, showcasing clear cybersecurity leadership impact metrics through a professional dashboard with risk remediation data and ROI charts. The clarity is excellent, and there are no watermarks.",
+      "file_name": "cybersecurity_leadership_impact_metrics_dashboard_charts.jpg",
+      "caption": "A professional dashboard displaying cybersecurity leadership impact metrics, including a risk remediation table with project names, priority, related risks, average loss, project cost, Return on Security Investment (RoSI), and CSF Control Progress. Below, two bar charts illustrate 'Solution Return On Security Investment' over time for 'Cyber Security Awareness Training' (showing percentages like 276%, 185%, 90%) and 'Restrict Access with Role-Based Permissions' (showing percentages like 175%, 150%, 120%) from March 2023 to March 2025, highlighting key performance indicators for strategic cybersecurity initiatives.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A professional image showing cybersecurity leadership impact, metrics, or professional achievements",
+    "image_info": {
+      "url": "https://www.slideteam.net/wp/wp-content/uploads/2025/08/Cyber-Security-Key-Performance-Indicators-Metrics-Dashboard.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 106346,
+      "width": 1280,
+      "height": 720,
+      "total_pixels": 921600,
+      "basic_score": 0.9305380312812218,
+      "file_name": "cybersecurity_leadership_impact_metrics_dashboard.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 98.0,
+      "watermark_score": 90.0,
+      "overall_score": 95.0,
+      "explanation": "The image is highly relevant, presenting a detailed 'Cyber Security Key Performance Indicators Metrics Dashboard' that effectively displays metrics and indirectly reflects leadership impact. The clarity is excellent, with all text and graphical elements perfectly readable. There is a small instructional note at the bottom which is not a watermark but slightly reduces the score for a completely 'clean' image. Overall, it's a professional and well-composed image.",
+      "file_name": "cybersecurity_leadership_impact_metrics_dashboard.jpg",
+      "caption": "A comprehensive Cyber Security Key Performance Indicators Metrics Dashboard, featuring sections on Cyber Security Operational Health (incidents, vulnerabilities, threats, investigations), Audit and Compliance (upcoming, completed audits, fiscal year compliance, investigations), Controls Health (Identify, Detect, Protect, Recover, Respond coverage), Trend Over Time, and Project Status. It also details Incident Response Process, Vulnerability Patching Schedule, Compliance Investigation Process, and Training Compliance, using clear visual indicators and legends to show high/full, moderate, and low coverage.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A professional image showing cybersecurity leadership impact, metrics, or professional achievements",
+    "image_info": {
+      "url": "https://www.slideteam.net/wp/wp-content/uploads/2025/08/Cyber-Security-Key-Metrics-Monitoring-Dashboard.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 93016,
+      "width": 1280,
+      "height": 720,
+      "total_pixels": 921600,
+      "basic_score": 0.9292101665864486,
+      "file_name": "cybersecurity_leadership_impact_metrics_dashboard.jpg_8d"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 95.0,
+      "watermark_score": 90.0,
+      "overall_score": 95.0,
+      "explanation": "The image is exceptionally relevant to the search query and prompt, presenting a clear and professional 'Cyber Security Key Metrics Monitoring Dashboard'. It covers various essential metrics like controls, audits, incidents, vulnerabilities, threats, and training compliance, all of which directly support assessing cybersecurity leadership impact. The clarity is excellent, with all text and charts easily legible. While there is instructional text at the bottom regarding its Excel link, it is not a traditional watermark and does not detract significantly from the image's professional quality.",
+      "file_name": "cybersecurity_leadership_impact_metrics_dashboard.jpg",
+      "caption": "A comprehensive digital dashboard titled 'Cyber Security Key Metrics Monitoring Dashboard', displaying crucial cybersecurity metrics. It features sections on critical applications, mission-critical status, geographical distribution of audits, control efficacy across Detect, Identify, Protect, Recover, and Respond stages, alongside incident, vulnerability, and major threat tracking. The dashboard also includes compliance investigation details, overall compliance efficiency, and cybersecurity training metrics covering compliance, phishing activity, and internal audit status. This professional visual aid is ideal for presenting leadership impact and assessing an organization's cyber resilience.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A professional image showing cybersecurity leadership impact, metrics, or professional achievements",
+    "image_info": {
+      "url": "https://www.datocms-assets.com/106033/1747914643-soc-manager-dashboard.png",
+      "img_format": "PNG",
+      "mode": "RGBA",
+      "file_size": 297538,
+      "width": 1596,
+      "height": 810,
+      "total_pixels": 1292760,
+      "basic_score": 0.9098565948113609,
+      "file_name": "cybersecurity_incident_metrics_dashboard.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 98.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image perfectly displays a professional dashboard with various metrics and charts related to incident management, including a 'security' label in the incident breakdown. Key performance indicators like Mean Time To Resolve (MTTR) and Mean Time To Detect (MTTD) are crucial for assessing cybersecurity leadership impact. The image is highly clear, well-composed, and free of watermarks.",
+      "file_name": "cybersecurity_incident_metrics_dashboard.jpg",
+      "caption": "A professional dark-themed dashboard displaying 'Insights' for incident management, featuring key performance indicators such as Total Incidents (268), Resolved Incidents (259), Active Incidents (9), Mean Time To Resolve (MTTR) of 2.28 days, and Mean Time To Detect (MTTD) of 0s. The dashboard also includes bar charts showing incident breakdown by severity (Critical, Pending, Major, Demo, Minor) and by labels (including 'security'), along with line graphs for monthly and daily incidents by severity and monthly MTTR. This visualizes operational performance metrics crucial for evaluating cybersecurity leadership impact and professional achievements.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A professional image showing cybersecurity leadership impact, metrics, or professional achievements",
+    "image_info": {
+      "url": "https://strobes.co/wp-content/uploads/2025/05/4.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 107348,
+      "width": 1080,
+      "height": 1080,
+      "total_pixels": 1166400,
+      "basic_score": 0.9209499349884656,
+      "file_name": "cybersecurity_risk_visibility_threat_exposure_radar_chart.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 70.0,
+      "clarity_score": 100.0,
+      "watermark_score": 70.0,
+      "overall_score": 85.0,
+      "explanation": "The image is highly professional and clear, depicting cybersecurity risk visibility through a radar-like chart, which is relevant to 'cybersecurity' and 'charts'. It shows various threat exposures ('Shadow IT', 'Exposed IP', 'Unscanned Cloud Asset', 'Patch Overdue') that cybersecurity leadership would need to address. However, it does not explicitly illustrate 'leadership impact', 'metrics' (beyond identifying types of risks), or 'professional achievements' in a direct way, focusing more on the problem identification rather than outcomes or performance indicators. A 'strobes' logo is present in the top right corner.",
+      "file_name": "cybersecurity_risk_visibility_threat_exposure_radar_chart.jpg",
+      "caption": "A professional digital graphic featuring a radar-like visualization that illustrates 'Risk Visibility & Threat Exposure' in cybersecurity. The dark background highlights a bright green radar sweep identifying various vulnerabilities such as 'Shadow IT', 'Unscanned Cloud Asset', 'Exposed IP', and 'Patch Overdue'. The text 'See what's exposed. Discover what's missing.' clarifies the image's purpose in detecting potential cyber threats.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A professional portrait photo of a distinguished cybersecurity expert, showing military bearing and professional appearance",
+    "image_info": {
+      "url": "https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/1812/4945680/1000w_q95.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 544069,
+      "width": 1000,
+      "height": 1196,
+      "total_pixels": 1196000,
+      "basic_score": 0.9318569486358854,
+      "file_name": "us_army_staff_sergeant_draper_military_intelligence_cybersecurity_portrait.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 85.0,
+      "clarity_score": 98.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is a high-quality, professional portrait of a U.S. Army Staff Sergeant, clearly displaying military bearing and a professional appearance. The background elements strongly indicate a connection to military intelligence or cybersecurity, aligning well with the 'cybersecurity expert' aspect of the query and prompt. The clarity and composition are excellent. The relevance score is slightly reduced because the subject is an enlisted Staff Sergeant, not a 'military officer' as specifically requested in the search query, although she embodies the professional attributes requested by the prompt.",
+      "file_name": "us_army_staff_sergeant_draper_military_intelligence_cybersecurity_portrait.jpg",
+      "caption": "A professional portrait of U.S. Army Staff Sergeant Draper, wearing a multi-camouflage Army Combat Uniform (ACU) and glasses, smiling confidently. Her rank insignia for Staff Sergeant (E-6) is visible on her chest. The background features two distinct emblems: a blue and black emblem for the 780th Military Intelligence Battalion with '780th Military Intelligence' text, and a blue and yellow emblem for the United States Intelligence and Security Command (INSCOM), symbolizing her role as a military professional likely in intelligence or cybersecurity.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A professional portrait photo of a distinguished cybersecurity expert, showing military bearing and professional appearance",
+    "image_info": {
+      "url": "https://resources.finalsite.net/images/f_auto,q_auto/v1694124306/missourimilitaryacademyorg/hil2gcfcc8vjaawfdlu9/Landrum_Jason_Lo-2.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 954644,
+      "width": 2048,
+      "height": 2048,
+      "total_pixels": 4194304,
+      "basic_score": 0.49163046027430246,
+      "file_name": "professional_military_officer_portrait_cybersecurity_expert.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 90.0,
+      "clarity_score": 98.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is a very clear and professional portrait of a military officer, perfectly aligning with the 'portrait' and 'military officer' aspects of the search query and prompt. While 'cybersecurity expert' is not visually confirmed, the distinguished and professional military bearing strongly supports the representation of an expert in a specialized field within the armed forces. The lighting, composition, and detail are excellent, with no watermarks.",
+      "file_name": "professional_military_officer_portrait_cybersecurity_expert.jpg",
+      "caption": "A distinguished professional portrait of a military officer, possibly a cybersecurity expert, in a dark blue service uniform with medals, ribbons, and rank insignia. The officer has a serious and composed expression, standing in front of a blurred background featuring the American flag and another military banner, likely representing a division or state, possibly the Missouri state flag.",
+      "recommend": true,
+      "error": ""
+    }
+  }
+]
