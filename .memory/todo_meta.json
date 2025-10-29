@@ -5,14 +5,14 @@
         "id": "1",
         "content": "Research and organize Lt Col Santosh Khadsare's professional background",
         "details": "Analyze the provided biographical information, research additional content about his achievements, publications, and professional activities to create comprehensive portfolio content",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       },
       "2": {
         "id": "2",
         "content": "Design professional portfolio website structure and visual style",
         "details": "Create a modern, professional design system with sections for: About, Experience, Achievements, Publications, Contact. Focus on cybersecurity/digital forensics theme with professional aesthetics",
-        "status": "pending",
+        "status": "in_progress",
         "priority": "high"
       },
       "3": {
