@@ -1,0 +1,315 @@
+{
+  "color": {
+    "surface": {
+      "pure-black": {
+        "value": "#000000",
+        "type": "color",
+        "description": "Hero background, OLED-optimized"
+      },
+      "near-black": {
+        "value": "#0a0a0a",
+        "type": "color",
+        "description": "Main page background"
+      },
+      "dark": {
+        "value": "#141414",
+        "type": "color",
+        "description": "Card backgrounds, level 1 elevation"
+      },
+      "hover": {
+        "value": "#1e1e1e",
+        "type": "color",
+        "description": "Hover states, level 2 elevation"
+      },
+      "modal": {
+        "value": "#282828",
+        "type": "color",
+        "description": "Tooltips, level 3 elevation"
+      }
+    },
+    "text": {
+      "primary": {
+        "value": "#e4e4e7",
+        "type": "color",
+        "description": "Headings, primary body text (15.2:1 contrast)"
+      },
+      "secondary": {
+        "value": "#a1a1aa",
+        "type": "color",
+        "description": "Supporting text, labels (8.9:1 contrast)"
+      },
+      "tertiary": {
+        "value": "#71717a",
+        "type": "color",
+        "description": "Captions, timestamps (5.1:1 contrast)"
+      }
+    },
+    "accent": {
+      "primary": {
+        "value": "#3b82f6",
+        "type": "color",
+        "description": "CTAs, links, active states (8.6:1 contrast)"
+      },
+      "hover": {
+        "value": "#60a5fa",
+        "type": "color",
+        "description": "Button hover, interactive highlights"
+      },
+      "muted": {
+        "value": "#2563eb",
+        "type": "color",
+        "description": "Borders, subtle accents"
+      }
+    },
+    "semantic": {
+      "success": {
+        "value": "#22c55e",
+        "type": "color",
+        "description": "Achievement indicators"
+      },
+      "warning": {
+        "value": "#f59e0b",
+        "type": "color",
+        "description": "Alert states"
+      },
+      "error": {
+        "value": "#ef4444",
+        "type": "color",
+        "description": "Critical notifications"
+      }
+    },
+    "border": {
+      "subtle": {
+        "value": "rgba(255, 255, 255, 0.1)",
+        "type": "color",
+        "description": "Card borders, separators"
+      },
+      "moderate": {
+        "value": "rgba(255, 255, 255, 0.15)",
+        "type": "color",
+        "description": "Hover borders"
+      },
+      "strong": {
+        "value": "rgba(255, 255, 255, 0.2)",
+        "type": "color",
+        "description": "Focus states"
+      }
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": {
+        "value": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+        "type": "fontFamily"
+      },
+      "monospace": {
+        "value": "'JetBrains Mono', 'Fira Code', 'Courier New', monospace",
+        "type": "fontFamily"
+      }
+    },
+    "fontSize": {
+      "hero": {
+        "value": "48px",
+        "type": "dimension"
+      },
+      "heading": {
+        "value": "32px",
+        "type": "dimension"
+      },
+      "subheading": {
+        "value": "24px",
+        "type": "dimension"
+      },
+      "body-large": {
+        "value": "18px",
+        "type": "dimension"
+      },
+      "body": {
+        "value": "16px",
+        "type": "dimension"
+      },
+      "small": {
+        "value": "14px",
+        "type": "dimension"
+      },
+      "tiny": {
+        "value": "12px",
+        "type": "dimension"
+      }
+    },
+    "fontWeight": {
+      "regular": {
+        "value": "400",
+        "type": "number"
+      },
+      "medium": {
+        "value": "500",
+        "type": "number"
+      },
+      "semibold": {
+        "value": "600",
+        "type": "number"
+      },
+      "bold": {
+        "value": "700",
+        "type": "number"
+      }
+    },
+    "lineHeight": {
+      "tight": {
+        "value": "1.1",
+        "type": "number"
+      },
+      "snug": {
+        "value": "1.2",
+        "type": "number"
+      },
+      "normal": {
+        "value": "1.3",
+        "type": "number"
+      },
+      "relaxed": {
+        "value": "1.5",
+        "type": "number"
+      },
+      "loose": {
+        "value": "1.6",
+        "type": "number"
+      }
+    },
+    "letterSpacing": {
+      "tight": {
+        "value": "-0.02em",
+        "type": "dimension"
+      },
+      "slight": {
+        "value": "-0.01em",
+        "type": "dimension"
+      },
+      "normal": {
+        "value": "0",
+        "type": "dimension"
+      },
+      "wide": {
+        "value": "0.01em",
+        "type": "dimension"
+      },
+      "wider": {
+        "value": "0.02em",
+        "type": "dimension"
+      }
+    }
+  },
+  "spacing": {
+    "xs": {
+      "value": "8px",
+      "type": "dimension"
+    },
+    "sm": {
+      "value": "16px",
+      "type": "dimension"
+    },
+    "md": {
+      "value": "24px",
+      "type": "dimension"
+    },
+    "lg": {
+      "value": "32px",
+      "type": "dimension"
+    },
+    "xl": {
+      "value": "48px",
+      "type": "dimension"
+    },
+    "2xl": {
+      "value": "64px",
+      "type": "dimension"
+    },
+    "3xl": {
+      "value": "96px",
+      "type": "dimension"
+    },
+    "4xl": {
+      "value": "128px",
+      "type": "dimension"
+    }
+  },
+  "borderRadius": {
+    "sm": {
+      "value": "8px",
+      "type": "dimension"
+    },
+    "md": {
+      "value": "12px",
+      "type": "dimension"
+    },
+    "lg": {
+      "value": "16px",
+      "type": "dimension"
+    },
+    "xl": {
+      "value": "24px",
+      "type": "dimension"
+    },
+    "full": {
+      "value": "9999px",
+      "type": "dimension"
+    }
+  },
+  "boxShadow": {
+    "card": {
+      "value": "0 0 0 1px rgba(255, 255, 255, 0.05), 0 4px 12px rgba(0, 0, 0, 0.5)",
+      "type": "shadow",
+      "description": "Resting card state"
+    },
+    "card-hover": {
+      "value": "0 0 0 1px rgba(255, 255, 255, 0.1), 0 8px 24px rgba(0, 0, 0, 0.6)",
+      "type": "shadow",
+      "description": "Card hover state"
+    },
+    "accent-glow": {
+      "value": "0 0 20px rgba(59, 130, 246, 0.5), 0 0 40px rgba(59, 130, 246, 0.3)",
+      "type": "shadow",
+      "description": "Button hover, active timeline"
+    },
+    "focus-glow": {
+      "value": "0 0 0 3px rgba(59, 130, 246, 0.4)",
+      "type": "shadow",
+      "description": "Keyboard focus states"
+    }
+  },
+  "animation": {
+    "duration": {
+      "fast": {
+        "value": "150ms",
+        "type": "duration"
+      },
+      "standard": {
+        "value": "250ms",
+        "type": "duration"
+      },
+      "slow": {
+        "value": "400ms",
+        "type": "duration"
+      },
+      "glow-pulse": {
+        "value": "2s",
+        "type": "duration"
+      }
+    },
+    "easing": {
+      "out": {
+        "value": "ease-out",
+        "type": "cubicBezier"
+      },
+      "sharp": {
+        "value": "cubic-bezier(0.4, 0.0, 0.2, 1)",
+        "type": "cubicBezier"
+      },
+      "smooth": {
+        "value": "ease-in-out",
+        "type": "cubicBezier"
+      }
+    }
+  }
+}
