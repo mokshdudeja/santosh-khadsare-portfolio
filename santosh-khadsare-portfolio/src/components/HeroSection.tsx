@@ -12,8 +12,8 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
     >
       {/* Background Glow Effects */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent-primary/5 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-accent-hover/3 rounded-full blur-2xl"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-600/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-purple-800/3 rounded-full blur-2xl"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -21,7 +21,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
           {/* Profile Image */}
           <div className="flex justify-center">
             <div className="relative">
-              <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-2 border-white/10 shadow-accent-glow">
+              <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-2 border-white/10 shadow-purple-600">
                 <img 
                   src="/images/IMG-20251012-WA0076.jpg" 
                   alt="Lt Col (Dr) Santosh Khadsare"
@@ -29,7 +29,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
                 />
               </div>
               {/* Ring Animation */}
-              <div className="absolute inset-0 rounded-full border-2 border-accent-primary/30 animate-ping"></div>
+              <div className="absolute inset-0 rounded-full border-2 border-purple-600/30 animate-ping"></div>
             </div>
           </div>
 
@@ -38,7 +38,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-zinc-100 tracking-tight">
               Lt Col (Dr)
               <br />
-              <span className="text-gradient">Santosh Khadsare</span>
+              <span className="bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Santosh Khadsare</span>
             </h1>
             
             <div className="space-y-2">
@@ -64,7 +64,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
             <button
               onClick={() => onNavigate('experience')}
-              className="group px-8 py-4 bg-accent-primary hover:bg-accent-hover text-white font-semibold rounded-lg transition-all duration-standard hover:shadow-accent-glow btn-hover-lift flex items-center gap-2"
+              className="group px-8 py-4 bg-purple-600 hover:bg-purple-800 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-purple-600 hover:translate-y-[-2px] flex items-center gap-2"
             >
               View Experience
               <ChevronDown className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
@@ -72,7 +72,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
             
             <button
               onClick={() => onNavigate('contact')}
-              className="group px-8 py-4 border-2 border-accent-primary text-blue-400 hover:bg-accent-primary hover:text-white font-semibold rounded-lg transition-all duration-standard flex items-center gap-2"
+              className="group px-8 py-4 border-2 border-purple-600 text-blue-400 hover:bg-purple-600 hover:text-white font-semibold rounded-lg transition-all duration-300 flex items-center gap-2"
             >
               <Mail className="w-4 h-4" />
               Contact
@@ -101,7 +101,7 @@ export function HeroSection({ onNavigate }: HeroSectionProps) {
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <button
           onClick={() => onNavigate('about')}
-          className="flex flex-col items-center space-y-2 text-zinc-500 hover:text-blue-400 transition-colors animate-scroll-indicator"
+          className="flex flex-col items-center space-y-2 text-zinc-500 hover:text-blue-400 transition-colors animate-bounce"
         >
           <span className="text-sm font-medium">Scroll to explore</span>
           <ChevronDown className="w-5 h-5" />

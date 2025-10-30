@@ -62,7 +62,7 @@ export function PublicationsSection() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-100">
             Publications & Research
           </h2>
-          <div className="w-24 h-1 bg-accent-primary mx-auto"></div>
+          <div className="w-24 h-1 bg-purple-600 mx-auto"></div>
           <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
             Thought leadership through research, publications, and international speaking engagements
           </p>
@@ -72,13 +72,13 @@ export function PublicationsSection() {
           {/* Publications */}
           <div className="lg:col-span-8 space-y-8">
             {/* Featured Publication */}
-            <div className="bg-gradient-to-r from-accent-primary/10 to-accent-hover/10 border border-accent-primary/20 rounded-2xl p-8">
+            <div className="bg-gradient-to-r from-purple-600/10 to-purple-800/10 border border-purple-600/20 rounded-2xl p-8">
               <div className="flex items-start space-x-4 mb-6">
-                <div className="p-3 bg-accent-primary/20 rounded-lg">
+                <div className="p-3 bg-purple-600/20 rounded-lg">
                   <BookOpen className="w-8 h-8 text-blue-400" />
                 </div>
                 <div>
-                  <div className="inline-flex items-center px-3 py-1 bg-accent-primary text-white text-sm font-medium rounded-full mb-2">
+                  <div className="inline-flex items-center px-3 py-1 bg-purple-600 text-white text-sm font-medium rounded-full mb-2">
                     Featured Publication
                   </div>
                   <h3 className="text-2xl font-bold text-zinc-100 mb-2">
@@ -106,7 +106,7 @@ export function PublicationsSection() {
                     <span className="text-sm">Ongoing publication</span>
                   </div>
                 </div>
-                <button className="flex items-center space-x-2 text-blue-400 hover:text-accent-hover transition-colors">
+                <button className="flex items-center space-x-2 text-blue-400 hover:text-purple-800 transition-colors">
                   <span className="text-sm font-medium">Read Journal</span>
                   <ExternalLink className="w-4 h-4" />
                 </button>
@@ -120,7 +120,7 @@ export function PublicationsSection() {
                 {publications.slice(1).map((pub, index) => (
                   <div 
                     key={index}
-                    className="bg-zinc-900 border border-white/10 rounded-lg p-6 shadow-lg hover:shadow-lg-hover transition-all duration-standard group"
+                    className="bg-zinc-900 border border-white/10 rounded-lg p-6 shadow-lg hover:shadow-xl hover:shadow-2xl transition-shadow transition-all duration-300 group"
                   >
                     <div className="flex items-start justify-between mb-3">
                       <div>
@@ -137,7 +137,7 @@ export function PublicationsSection() {
                       <div className="text-sm text-zinc-500">
                         Impact: {pub.impact}
                       </div>
-                      <button className="text-blue-400 hover:text-accent-hover transition-colors">
+                      <button className="text-blue-400 hover:text-purple-800 transition-colors">
                         <ExternalLink className="w-4 h-4" />
                       </button>
                     </div>
@@ -161,7 +161,7 @@ export function PublicationsSection() {
                 {speakingEngagements.map((engagement, index) => (
                   <div 
                     key={index}
-                    className="bg-zinc-900 border border-white/10 rounded-lg p-4 shadow-lg hover:shadow-lg-hover transition-all duration-standard group"
+                    className="bg-zinc-900 border border-white/10 rounded-lg p-4 shadow-lg hover:shadow-xl hover:shadow-2xl transition-shadow transition-all duration-300 group"
                   >
                     <div className="space-y-2">
                       <div className="flex items-center justify-between">

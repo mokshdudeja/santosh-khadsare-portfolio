@@ -38,7 +38,7 @@ export function Navigation({ activeSection, onNavigate }: NavigationProps) {
     <>
       {/* Fixed Navigation */}
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-standard ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isVisible
             ? 'translate-y-0 bg-zinc-950/90 backdrop-blur-md border-b border-white/10'
             : '-translate-y-full'
@@ -68,10 +68,10 @@ export function Navigation({ activeSection, onNavigate }: NavigationProps) {
                 >
                   {item.label}
                   {activeSection === item.id && (
-                    <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent-primary"></span>
+                    <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-purple-600"></span>
                   )}
                   {activeSection !== item.id && (
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-accent-primary transition-all duration-200 group-hover:w-full"></span>
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-600 transition-all duration-200 group-hover:w-full"></span>
                   )}
                 </button>
               ))}
@@ -80,7 +80,7 @@ export function Navigation({ activeSection, onNavigate }: NavigationProps) {
             {/* Contact CTA */}
             <button
               onClick={() => handleNavClick('contact')}
-              className="hidden sm:inline-flex px-4 py-2 text-sm font-semibold text-white bg-accent-primary hover:bg-accent-hover rounded-lg transition-all duration-standard hover:shadow-accent-glow btn-hover-lift"
+              className="hidden sm:inline-flex px-4 py-2 text-sm font-semibold text-white bg-purple-600 hover:bg-purple-800 rounded-lg transition-all duration-300 hover:shadow-purple-600 hover:translate-y-[-2px]"
             >
               Get In Touch
             </button>
@@ -105,7 +105,7 @@ export function Navigation({ activeSection, onNavigate }: NavigationProps) {
                   onClick={() => handleNavClick(item.id)}
                   className={`block w-full text-left px-3 py-2 text-sm font-medium transition-colors rounded-lg ${
                     activeSection === item.id
-                      ? 'text-blue-400 bg-accent-primary/10'
+                      ? 'text-blue-400 bg-purple-600/10'
                       : 'text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800'
                   }`}
                 >
@@ -114,7 +114,7 @@ export function Navigation({ activeSection, onNavigate }: NavigationProps) {
               ))}
               <button
                 onClick={() => handleNavClick('contact')}
-                className="block w-full text-left px-3 py-2 mt-4 text-sm font-semibold text-white bg-accent-primary hover:bg-accent-hover rounded-lg transition-all duration-standard"
+                className="block w-full text-left px-3 py-2 mt-4 text-sm font-semibold text-white bg-purple-600 hover:bg-purple-800 rounded-lg transition-all duration-300"
               >
                 Get In Touch
               </button>

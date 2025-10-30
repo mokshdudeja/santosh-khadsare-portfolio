@@ -65,7 +65,7 @@ export function ContactSection() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-100">
             Let's Connect
           </h2>
-          <div className="w-24 h-1 bg-accent-primary mx-auto"></div>
+          <div className="w-24 h-1 bg-purple-600 mx-auto"></div>
           <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
             Ready to discuss cybersecurity challenges, training opportunities, or collaboration possibilities?
           </p>
@@ -93,9 +93,9 @@ export function ContactSection() {
                   href={method.action}
                   target={method.action.startsWith('http') ? '_blank' : '_self'}
                   rel={method.action.startsWith('http') ? 'noopener noreferrer' : undefined}
-                  className="group flex items-start space-x-4 p-4 bg-zinc-900 border border-white/10 rounded-lg hover:border-accent-primary/50 transition-all duration-standard hover:shadow-lg-hover"
+                  className="group flex items-start space-x-4 p-4 bg-zinc-900 border border-white/10 rounded-lg hover:border-purple-600/50 transition-all duration-300 hover:shadow-xl hover:shadow-2xl transition-shadow"
                 >
-                  <div className="p-2 bg-accent-primary/10 rounded-lg text-blue-400 group-hover:bg-accent-primary/20 transition-colors">
+                  <div className="p-2 bg-purple-600/10 rounded-lg text-blue-400 group-hover:bg-purple-600/20 transition-colors">
                     {method.icon}
                   </div>
                   <div className="flex-1 space-y-1">
@@ -128,7 +128,7 @@ export function ContactSection() {
                 {consultationAreas.map((area, index) => (
                   <span 
                     key={index}
-                    className="px-3 py-1 bg-accent-primary/10 text-blue-400 text-sm rounded-full border border-accent-primary/20"
+                    className="px-3 py-1 bg-purple-600/10 text-blue-400 text-sm rounded-full border border-purple-600/20"
                   >
                     {area}
                   </span>
@@ -157,7 +157,7 @@ export function ContactSection() {
                       required
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-lg text-zinc-100 placeholder-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-lg text-zinc-100 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-colors"
                       placeholder="Your full name"
                     />
                   </div>
@@ -173,7 +173,7 @@ export function ContactSection() {
                       required
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-lg text-zinc-100 placeholder-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-lg text-zinc-100 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-colors"
                       placeholder="your.email@company.com"
                     />
                   </div>
@@ -190,7 +190,7 @@ export function ContactSection() {
                       name="organization"
                       value={formData.organization}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-lg text-zinc-100 placeholder-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-lg text-zinc-100 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-colors"
                       placeholder="Company or institution"
                     />
                   </div>
@@ -205,7 +205,7 @@ export function ContactSection() {
                       required
                       value={formData.subject}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-lg text-zinc-100 focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-lg text-zinc-100 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-colors"
                     >
                       <option value="">Select a subject</option>
                       <option value="consultation">Consultation Request</option>
@@ -229,14 +229,14 @@ export function ContactSection() {
                     rows={6}
                     value={formData.message}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-lg text-zinc-100 placeholder-text-tertiary focus:outline-none focus:ring-2 focus:ring-accent-primary focus:border-transparent transition-colors resize-vertical"
+                    className="w-full px-4 py-3 bg-zinc-950 border border-white/10 rounded-lg text-zinc-100 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent transition-colors resize-vertical"
                     placeholder="Please describe your inquiry or how we can collaborate..."
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 bg-accent-primary hover:bg-accent-hover text-white font-semibold rounded-lg transition-all duration-standard hover:shadow-accent-glow btn-hover-lift flex items-center justify-center space-x-2"
+                  className="w-full px-6 py-3 bg-purple-600 hover:bg-purple-800 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-purple-600 hover:translate-y-[-2px] flex items-center justify-center space-x-2"
                 >
                   <Mail className="w-4 h-4" />
                   <span>Send Message</span>

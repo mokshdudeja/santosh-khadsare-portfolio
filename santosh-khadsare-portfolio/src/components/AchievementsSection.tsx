@@ -54,7 +54,7 @@ export function AchievementsSection() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-100">
             Achievements & Recognition
           </h2>
-          <div className="w-24 h-1 bg-accent-primary mx-auto"></div>
+          <div className="w-24 h-1 bg-purple-600 mx-auto"></div>
           <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
             Consistent excellence across military service, government operations, 
             and private-sector innovation
@@ -66,17 +66,17 @@ export function AchievementsSection() {
           {achievements.map((achievement, index) => (
             <div 
               key={index}
-              className="group bg-zinc-900 border border-white/10 rounded-lg p-6 shadow-lg hover:shadow-lg-hover transition-all duration-standard hover:-translate-y-1"
+              className="group bg-zinc-900 border border-white/10 rounded-lg p-6 shadow-lg hover:shadow-xl hover:shadow-2xl transition-shadow transition-all duration-300 hover:-translate-y-1 transition-transform"
             >
               {/* Icon and Highlight */}
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center space-x-3">
-                  <div className="p-3 bg-accent-primary/10 rounded-lg text-blue-400 group-hover:bg-accent-primary/20 transition-colors">
+                  <div className="p-3 bg-purple-600/10 rounded-lg text-blue-400 group-hover:bg-purple-600/20 transition-colors">
                     {achievement.icon}
                   </div>
                 </div>
                 <div className="text-right">
-                  <div className="text-xs font-semibold text-blue-400 bg-accent-primary/10 px-2 py-1 rounded">
+                  <div className="text-xs font-semibold text-blue-400 bg-purple-600/10 px-2 py-1 rounded">
                     {achievement.highlight}
                   </div>
                 </div>
@@ -97,17 +97,17 @@ export function AchievementsSection() {
 
               {/* Hover Effect */}
               <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="w-full h-0.5 bg-gradient-to-r from-accent-primary to-accent-hover"></div>
+                <div className="w-full h-0.5 bg-gradient-to-r from-purple-600 to-purple-800"></div>
               </div>
             </div>
           ))}
         </div>
 
         {/* Featured Achievement */}
-        <div className="mt-16 bg-gradient-to-r from-accent-primary/10 to-accent-hover/10 border border-accent-primary/20 rounded-2xl p-8">
+        <div className="mt-16 bg-gradient-to-r from-purple-600/10 to-purple-800/10 border border-purple-600/20 rounded-2xl p-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-4">
-              <div className="inline-flex items-center px-3 py-1 bg-accent-primary text-white text-sm font-medium rounded-full">
+              <div className="inline-flex items-center px-3 py-1 bg-purple-600 text-white text-sm font-medium rounded-full">
                 Featured Recognition
               </div>
               <h3 className="text-2xl md:text-3xl font-bold text-zinc-100">

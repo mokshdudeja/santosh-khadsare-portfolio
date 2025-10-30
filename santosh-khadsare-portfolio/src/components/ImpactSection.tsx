@@ -14,21 +14,21 @@ export function ImpactSection() {
       value: "International",
       label: "LEA Training",
       description: "International law enforcement agencies trained with standardized methodologies",
-      color: "text-semantic-success"
+      color: "text-green-400"
     },
     {
       icon: <BookOpen className="w-8 h-8" />,
       value: "Multiple",
       label: "FDPs Delivered",
       description: "Faculty Development Programs at prestigious institutes bridging theory and practice",
-      color: "text-accent-hover"
+      color: "text-purple-400"
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
       value: "4+",
       label: "Years CHFI Committee",
       description: "Contribution to certification frameworks and workforce development standards",
-      color: "text-semantic-warning"
+      color: "text-yellow-400"
     }
   ]
 
@@ -58,7 +58,7 @@ export function ImpactSection() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-100">
             Professional Impact
           </h2>
-          <div className="w-24 h-1 bg-accent-primary mx-auto"></div>
+          <div className="w-24 h-1 bg-purple-600 mx-auto"></div>
           <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
             Building capability and developing talent pipelines across the global cybersecurity ecosystem
           </p>
@@ -69,10 +69,10 @@ export function ImpactSection() {
           {impactMetrics.map((metric, index) => (
             <div 
               key={index}
-              className="group bg-zinc-900 border border-white/10 rounded-lg p-6 shadow-lg hover:shadow-lg-hover transition-all duration-standard hover:-translate-y-1 text-center"
+              className="group bg-zinc-900 border border-white/10 rounded-lg p-6 shadow-lg hover:shadow-xl hover:shadow-2xl transition-shadow transition-all duration-300 hover:-translate-y-1 text-center"
             >
               <div className="flex justify-center mb-4">
-                <div className="p-4 bg-accent-primary/10 rounded-lg group-hover:bg-accent-primary/20 transition-colors">
+                <div className="p-4 bg-purple-600/10 rounded-lg group-hover:bg-purple-600/20 transition-colors">
                   <div className={metric.color}>
                     {metric.icon}
                   </div>
@@ -100,7 +100,7 @@ export function ImpactSection() {
               <h3 className="text-2xl md:text-3xl font-bold text-zinc-100">
                 Training Philosophy
               </h3>
-              <div className="w-16 h-1 bg-accent-primary"></div>
+              <div className="w-16 h-1 bg-purple-600"></div>
             </div>
 
             <div className="space-y-6">
@@ -135,7 +135,7 @@ export function ImpactSection() {
                 alt="Professional meeting"
                 className="w-full rounded-lg shadow-lg"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-surface-near-black/60 to-transparent rounded-lg"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-950/60 to-transparent rounded-lg"></div>
               <div className="absolute bottom-4 left-4 right-4 text-white">
                 <p className="text-sm font-medium">Cross-functional collaboration and capability building</p>
               </div>
@@ -159,7 +159,7 @@ export function ImpactSection() {
                 <h3 className="text-2xl md:text-3xl font-bold text-zinc-100">
                   Mentorship & Academic Excellence
                 </h3>
-                <div className="w-16 h-1 bg-accent-primary"></div>
+                <div className="w-16 h-1 bg-purple-600"></div>
               </div>
 
               <div className="space-y-4 text-zinc-400">

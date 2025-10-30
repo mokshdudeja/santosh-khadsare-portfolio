@@ -49,7 +49,7 @@ export function ExperienceSection() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-zinc-100">
             Career Timeline
           </h2>
-          <div className="w-24 h-1 bg-accent-primary mx-auto"></div>
+          <div className="w-24 h-1 bg-purple-600 mx-auto"></div>
           <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
             25+ years of progressive leadership spanning military operations, 
             national cybersecurity response, and corporate innovation
@@ -59,7 +59,7 @@ export function ExperienceSection() {
         {/* Timeline */}
         <div className="relative">
           {/* Timeline Line */}
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-border-white/10 transform md:-translate-x-px"></div>
+          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gray-700/10 transform md:-translate-x-px"></div>
 
           {/* Timeline Items */}
           <div className="space-y-12">
@@ -71,7 +71,7 @@ export function ExperienceSection() {
                 <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 z-10">
                   <div className={`w-4 h-4 rounded-full border-2 ${
                     exp.isCurrent 
-                      ? 'bg-accent-primary border-accent-primary shadow-accent-glow animate-glow-pulse' 
+                      ? 'bg-purple-600 border-purple-600 shadow-purple-600 animate-pulse' 
                       : 'bg-zinc-800 border-white/20'
                   }`}></div>
                 </div>
@@ -80,14 +80,14 @@ export function ExperienceSection() {
                 <div className={`w-full md:w-5/12 ml-12 md:ml-0 ${
                   index % 2 === 0 ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'
                 }`}>
-                  <div className="bg-zinc-900 border border-white/10 rounded-lg p-6 shadow-lg hover:shadow-lg-hover transition-all duration-standard group">
+                  <div className="bg-zinc-900 border border-white/10 rounded-lg p-6 shadow-lg hover:shadow-xl hover:shadow-2xl transition-shadow transition-all duration-300 group">
                     {/* Year Badge */}
                     <div className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium mb-4 ${
                       exp.isCurrent 
-                        ? 'bg-accent-primary/10 text-blue-400 border border-accent-primary/20' 
+                        ? 'bg-purple-600/10 text-blue-400 border border-purple-600/20' 
                         : 'bg-zinc-800 text-zinc-400 border border-white/10'
                     }`}>
-                      {exp.isCurrent && <div className="w-2 h-2 bg-accent-primary rounded-full mr-2 animate-pulse"></div>}
+                      {exp.isCurrent && <div className="w-2 h-2 bg-purple-600 rounded-full mr-2 animate-pulse"></div>}
                       {exp.year}
                       {exp.isCurrent && <span className="ml-1">(Current)</span>}
                     </div>
@@ -113,7 +113,7 @@ export function ExperienceSection() {
                       <ul className="space-y-2">
                         {exp.achievements.map((achievement, achIndex) => (
                           <li key={achIndex} className="flex items-start space-x-3">
-                            <div className="w-1.5 h-1.5 bg-accent-primary rounded-full mt-2 flex-shrink-0"></div>
+                            <div className="w-1.5 h-1.5 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
                             <span className="text-zinc-400 text-sm">{achievement}</span>
                           </li>
                         ))}
