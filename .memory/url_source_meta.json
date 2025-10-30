@@ -1,0 +1,56 @@
+{
+  "_source_id": 7,
+  "sources": {
+    "Moksh Dudeja Portfolio Research": {
+      "https://in.linkedin.com/in/mokshdudeja": {
+        "id": 1,
+        "publisher": "LinkedIn",
+        "url": "https://in.linkedin.com/in/mokshdudeja",
+        "title": "Moksh Dudeja LinkedIn Profile",
+        "info": "Professional profile showing current roles as Web Dev & AI Specialist at Webhack Solutions and Campus Ambassador at Perplexity, previous role as Generative AI Engineer at AI Wallah"
+      },
+      "https://github.com/mokshdudeja": {
+        "id": 2,
+        "publisher": "GitHub",
+        "url": "https://github.com/mokshdudeja",
+        "title": "Moksh Dudeja GitHub Profile",
+        "info": "Programming projects and repositories, technical skills including HTML5, Python, JavaScript, AI/ML tools, and current learning focus on Java"
+      },
+      "https://www.crunchbase.com/organization/webhack-solutions": {
+        "id": 3,
+        "publisher": "Crunchbase",
+        "url": "https://www.crunchbase.com/organization/webhack-solutions",
+        "title": "Webhack Solutions Company Profile",
+        "info": "India-based Digital Marketing Company providing marketing solutions and cybersecurity consultancy, founded by Arya Tyagi"
+      },
+      "https://in.linkedin.com/company/aiwallah": {
+        "id": 4,
+        "publisher": "LinkedIn",
+        "url": "https://in.linkedin.com/company/aiwallah",
+        "title": "AI Wallah Company Profile",
+        "info": "Education company (2-10 employees) founded in 2025, focused on empowering students to become Generative AI engineers, based in Kolkata"
+      },
+      "https://in.linkedin.com/company/cyberzero-club": {
+        "id": 5,
+        "publisher": "LinkedIn",
+        "url": "https://in.linkedin.com/company/cyberzero-club",
+        "title": "CyberZero Club Internship Program",
+        "info": "45-day cybersecurity internship program organized by CyberZero.In in collaboration with the Cybersecurity Council"
+      },
+      "https://www.dpgdegreecollege.com/": {
+        "id": 6,
+        "publisher": "DPG Degree College",
+        "url": "https://www.dpgdegreecollege.com/",
+        "title": "DPG Degree College Gurugram",
+        "info": "NAAC Grade 'A' accredited college offering Computer Science programs, affiliated with MDU Rohtak, located in Gurgaon"
+      },
+      "https://www.cloudskillsboost.google/public_profiles/1c52e370-f878-45ab-a6b5-3a29b1f49e01": {
+        "id": 7,
+        "publisher": "Google Cloud Skills Boost",
+        "url": "https://www.cloudskillsboost.google/public_profiles/1c52e370-f878-45ab-a6b5-3a29b1f49e01",
+        "title": "Moksh Dudeja Google Cloud Profile",
+        "info": "Bronze League status with 1190 points, completed 'Attention Mechanism' and 'Introduction to Image Generation' courses with badges"
+      }
+    }
+  }
+}

@@ -336,5 +336,343 @@
       "recommend": true,
       "error": ""
     }
+  },
+  {
+    "query": "Clean illustration representing cybersecurity concepts",
+    "image_info": {
+      "url": "https://marvel-b1-cdn.bc0a.com/f00000000310757/www.fortinet.com/content/dam/fortinet/images/cyberglossary/fig01-fortinet-cybersecurity-challenges.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 72961,
+      "width": 1254,
+      "height": 621,
+      "total_pixels": 778734,
+      "basic_score": 0.8966283453342244,
+      "file_name": "cybersecurity_technology_concept_overview_diagram.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 90.0,
+      "watermark_score": 80.0,
+      "overall_score": 90.0,
+      "explanation": "The image is a highly relevant and clear illustration of cybersecurity concepts, encompassing users, networks, and applications with associated challenges and solutions. The professional diagram effectively communicates complex technological ideas. A small corporate watermark is present, slightly reducing the score for complete absence of branding.",
+      "file_name": "cybersecurity_technology_concept_overview_diagram.jpg",
+      "caption": "A detailed cybersecurity technology concept diagram illustrating the interconnectedness of Users & Devices, Networks, and Applications. It highlights key considerations such as data leakage at endpoints, network complexity, secure access, hybrid multi-cloud environments, and the challenges and opportunities presented by edge computing and AI, along with network advancements like 6G and Wi-Fi 8.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Clean illustration representing cybersecurity concepts",
+    "image_info": {
+      "url": "https://img.freepik.com/premium-photo/cyber-security-information-privacy-data-protection-internet-technology-concept-virtual-screen-cybersecurity-technology-background_551826-21361.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 64069,
+      "width": 626,
+      "height": 417,
+      "total_pixels": 261042,
+      "basic_score": 0.7760132344466446,
+      "file_name": "cybersecurity_technology_network_shield_padlock_concept.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 97.0,
+      "explanation": "The image is exceptionally relevant to 'cybersecurity technology concept' and perfectly fits the 'clean illustration representing cybersecurity concepts' prompt. It features a glowing circuit board-like network with prominent shield and padlock icons, clearly symbolizing digital security. The clarity is excellent, and there are no visible watermarks, contributing to a very high overall quality.",
+      "file_name": "cybersecurity_technology_network_shield_padlock_concept.jpg",
+      "caption": "A vibrant digital illustration depicting a cybersecurity technology concept. The image features an intricate network of glowing blue lines resembling a circuit board, with illuminated nodes and data streams. Prominently displayed throughout the network are stylized shield and padlock icons, symbolizing protection, data security, and network defense. The glowing elements create a sense of advanced technology and secure digital infrastructure.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Clean illustration representing cybersecurity concepts",
+    "image_info": {
+      "url": "https://ehdinsurance.com/wp-content/uploads/2022/04/Cyber-Defenses-1024x545.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 116017,
+      "width": 1024,
+      "height": 545,
+      "total_pixels": 558080,
+      "basic_score": 0.8701076773174256,
+      "file_name": "cybersecurity_technology_concept_digital_security_illustration.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is a perfectly relevant and clean digital illustration for cybersecurity technology concepts. It features a central padlock icon surrounded by various interconnected security-related symbols, all rendered with excellent clarity and a professional aesthetic. There are no watermarks present.",
+      "file_name": "cybersecurity_technology_concept_digital_security_illustration.jpg",
+      "caption": "A modern digital illustration depicting cybersecurity technology concepts, with a prominent white padlock icon at the center. It is surrounded by interconnected digital symbols representing various security aspects, including a laptop with a lock, cloud security, fingerprint identification, and email protection, all set against a dynamic blue and purple futuristic background with abstract data graphs and glowing bokeh lights.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Clean illustration representing cybersecurity concepts",
+    "image_info": {
+      "url": "https://www.fortinet.com/content/dam/fortinet/images/cyberglossary/fig04-fortinet-cybersecurity-platform.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 152862,
+      "width": 1243,
+      "height": 611,
+      "total_pixels": 759473,
+      "basic_score": 0.9003840021589815,
+      "file_name": "integrated-cybersecurity-technology-concepts-diagram.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 95.0,
+      "watermark_score": 80.0,
+      "overall_score": 90.0,
+      "explanation": "The image is a highly relevant, clean, and professional illustration detailing various cybersecurity technology concepts, including secure networking, unified SASE, and AI-driven security operations. The clarity is excellent, with sharp text and distinct icons. A small copyright notice is present in the bottom right corner.",
+      "file_name": "integrated-cybersecurity-technology-concepts-diagram.jpg",
+      "caption": "A detailed diagram illustrating integrated cybersecurity technology concepts, presented as a clear and professional illustration. The diagram is divided into three main pillars: Secure Networking (featuring Firewall, LAN, WLAN), Unified SASE (with SD-WAN, SSE, Cloud Security), and AI-Driven Security Operations (covering SOC, Endpoint, DLP). These pillars are supported by underlying technologies such as FortiASIC, FortiCloud, FortiGuard, FortiAI, FortiClient, OT Security, and an overall Ecosystem, all connected by a central 'OS Convergence' and 'Security Fabric'.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Clean illustration representing cybersecurity concepts",
+    "image_info": {
+      "url": "https://imageio.forbes.com/specials-images/imageserve/6360256549e46108de0471da/Cyber-Threat-Intelligence-Concept---3D-Illustration/960x0.jpg?format=jpg&width=960",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 58810,
+      "width": 958,
+      "height": 577,
+      "total_pixels": 552766,
+      "basic_score": 0.8622927889617,
+      "file_name": "ai_powered_cybersecurity_threat_protection_illustration.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 100.0,
+      "watermark_score": 100.0,
+      "overall_score": 98.0,
+      "explanation": "The image is a perfect match for the search query and prompt. It's a clean, high-quality isometric illustration that clearly depicts various cybersecurity concepts like AI-driven protection (shield with brain), threat detection (skulls within radar), and network security. The clarity is excellent, and there are no watermarks.",
+      "file_name": "ai_powered_cybersecurity_threat_protection_illustration.jpg",
+      "caption": "An isometric digital illustration showcasing an advanced cybersecurity concept. A prominent glowing blue shield, featuring a brain icon, stands at the center, symbolizing AI-driven protection and intelligent defense. Surrounding it are multiple vivid red skull icons, representing various cyber threats and malware, positioned within a dynamic circular radar interface indicating active scanning and detection. Additional elements like server racks, key icons, and abstract data visualizations emphasize a comprehensive technological security ecosystem on a dark blue grid background.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A professional headshot of a young male software developer for a portfolio hero section",
+    "image_info": {
+      "url": "https://t3.ftcdn.net/jpg/05/40/63/14/360_F_540631446_a39tc1A3Smh7U2xbyijSEKGrx4FbJW6F.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 51491,
+      "width": 540,
+      "height": 360,
+      "total_pixels": 194400,
+      "basic_score": 0.748884362926715,
+      "file_name": "young-male-software-developer-portrait-office-desk.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 90.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 90.0,
+      "explanation": "The image features a professional young male who appears to be a software developer in a modern office setting. While the query and prompt specifically asked for a 'headshot,' this is a well-composed half-body portrait that is highly suitable for a portfolio hero section. The clarity and overall quality are excellent, and there are no watermarks.",
+      "file_name": "young-male-software-developer-portrait-office-desk.jpg",
+      "caption": "A friendly and professional young male software developer, dressed in a dark t-shirt, smiles directly at the camera from his organized office desk. He is surrounded by multiple computer monitors displaying code and data, indicating a tech-focused work environment.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A professional headshot of a young male software developer for a portfolio hero section",
+    "image_info": {
+      "url": "https://media.istockphoto.com/id/1359746925/photo/portrait-of-a-handsome-successful-confident-young-mixed-race-latino-man-with-glasses.jpg?s=612x612&w=0&k=20&c=T-hNLBZVl62q0xeMJa-N1aIYpTtvPpL0Y3ZLGo4Q4kk=",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 35889,
+      "width": 612,
+      "height": 408,
+      "total_pixels": 249696,
+      "basic_score": 0.7675906546664139,
+      "file_name": "young_male_developer_professional_portrait_headshot.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 100.0,
+      "watermark_score": 100.0,
+      "overall_score": 98.0,
+      "explanation": "The image is highly relevant to both the search query and prompt, featuring a young, professional-looking male with a confident and approachable expression, ideal for a developer's portfolio hero section. The office-like background subtly supports the 'developer' context. Clarity is excellent, and there are no watermarks. The composition and lighting are professional and aesthetically pleasing.",
+      "file_name": "young_male_developer_professional_portrait_headshot.jpg",
+      "caption": "A smiling young African American man wearing round glasses and a plaid shirt over a white t-shirt, stands confidently with his arms crossed in a bright, modern office or home office setting. A laptop, plant, and books are visible in the blurred background. He is looking directly at the camera with an inviting expression, suitable for a professional profile or hero section.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Clean illustration representing AI and machine learning technologies",
+    "image_info": {
+      "url": "https://blog.ovhcloud.com/wp-content/uploads/2024/09/image.png",
+      "img_format": "PNG",
+      "mode": "RGBA",
+      "file_size": 158928,
+      "width": 520,
+      "height": 510,
+      "total_pixels": 265200,
+      "basic_score": 0.782085926616094,
+      "file_name": "artificial_intelligence_machine_learning_data_science_venn_diagram_concept.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 100.0,
+      "watermark_score": 100.0,
+      "overall_score": 100.0,
+      "explanation": "The image is a perfect, clean illustration directly addressing the relationship between Artificial Intelligence, Machine Learning, and Data Science as requested by the query and prompt. It has excellent clarity and no watermarks.",
+      "file_name": "artificial_intelligence_machine_learning_data_science_venn_diagram_concept.jpg",
+      "caption": "A clean conceptual illustration, presented as a Venn diagram, visually explaining the relationship between Artificial Intelligence, Machine Learning, and Data Science. Artificial Intelligence is represented by a large teal circle, encompassing a smaller orange circle for Machine Learning. Data Science is depicted as a light blue dashed circle, overlapping with both AI and ML, showing their interconnectedness and shared space.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Clean illustration representing AI and machine learning technologies",
+    "image_info": {
+      "url": "https://static.vecteezy.com/system/resources/previews/023/155/586/non_2x/artificial-intelligence-concept-ai-machine-learning-analysis-information-digital-brain-with-neural-network-modern-flat-cartoon-style-illustration-on-white-background-vector.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 57678,
+      "width": 1247,
+      "height": 980,
+      "total_pixels": 1222060,
+      "basic_score": 0.9176102533895107,
+      "file_name": "artificial_intelligence_machine_learning_concept_illustration_ai_chip_neural_network.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is a clean, modern illustration highly relevant to artificial intelligence and machine learning. It features explicit 'AI' text on a chip, a network-patterned brain, and individuals interacting with these elements, representing development and application. The vector style ensures excellent clarity, and there are no watermarks.",
+      "file_name": "artificial_intelligence_machine_learning_concept_illustration_ai_chip_neural_network.jpg",
+      "caption": "A modern, clean vector illustration depicting the concept of artificial intelligence and machine learning. The image features a large silhouette of a human head with a glowing pink brain represented by a neural network. A woman is shown climbing a ladder towards the brain, while a man holds a large 'AI' chip. Circuit-like lines extend from the head, connecting various elements, all set against a backdrop of abstract, flowing shapes in blue and purple gradients. This visual metaphor effectively conveys human interaction, development, and integration with advanced AI and ML technologies.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Clean illustration representing AI and machine learning technologies",
+    "image_info": {
+      "url": "https://static.vecteezy.com/system/resources/previews/027/157/452/non_2x/ai-artificial-intelligence-machine-learning-concept-big-data-neural-networks-ai-technology-wireframe-hand-touching-digital-interface-with-connected-gears-cogs-and-icons-illustration-vector.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 158674,
+      "width": 1742,
+      "height": 980,
+      "total_pixels": 1707160,
+      "basic_score": 0.8285719389969163,
+      "file_name": "artificial_intelligence_machine_learning_concept_illustration.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 98.0,
+      "explanation": "The image is perfectly relevant to the search query and prompt, clearly depicting artificial intelligence and machine learning concepts through a clean, professional illustration. It features an 'AI' chip surrounded by related icons and a digital hand, all against a futuristic blue background. The clarity is excellent, and there are no watermarks.",
+      "file_name": "artificial_intelligence_machine_learning_concept_illustration.jpg",
+      "caption": "A clean, futuristic digital illustration showcasing Artificial Intelligence (AI) and Machine Learning concepts. A central illuminated 'AI' microchip icon is surrounded by interconnected gears and glowing icons representing various aspects of AI and technology, including a brain, robot arm, cloud computing, cybersecurity, coding, servers, and a globe. A wireframe-style digital hand interacts with the central AI chip, all set against a dark blue technological background with radiating light effects.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "Clean illustration representing AI and machine learning technologies",
+    "image_info": {
+      "url": "https://img.freepik.com/premium-vector/illustrations-concept-machine-learning-via-artificial-intelligence-with-technology-analysis-data-knowledge_71983-2044.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 86613,
+      "width": 626,
+      "height": 626,
+      "total_pixels": 391876,
+      "basic_score": 0.8241811002120691,
+      "file_name": "ai_machine_learning_concept_brain_illustration.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 100.0,
+      "clarity_score": 100.0,
+      "watermark_score": 100.0,
+      "overall_score": 100.0,
+      "explanation": "This image is an excellent match for the search query and prompt. It clearly illustrates machine learning and AI concepts with a stylized brain and data visualizations. The illustration is clean, crisp, professionally composed, and free of watermarks.",
+      "file_name": "ai_machine_learning_concept_brain_illustration.jpg",
+      "caption": "An isometric, futuristic illustration representing Machine Learning and Artificial Intelligence concepts. A glowing, transparent human brain, symbolizing advanced processing and intelligence, is centrally featured, surrounded by holographic data visualizations such as bar graphs, pie charts, and abstract data streams. These elements are anchored to a complex, chip-like base with intricate circuit patterns, all rendered in vibrant shades of blue, purple, and teal. The words 'MACHINE LEARNING' are prominently displayed at the top.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A clean modern tech office environment for background or about section",
+    "image_info": {
+      "url": "https://k2space.imgix.net/app/uploads/2023/06/K2-Criteo-Office-Curator-LARGE-102-scaled.jpg?auto=format&fit=max&w=5000&q=90",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 585453,
+      "width": 2560,
+      "height": 1707,
+      "total_pixels": 4369920,
+      "basic_score": 0.4831937416940332,
+      "file_name": "modern_tech_company_office_lobby_reception.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 98.0,
+      "clarity_score": 95.0,
+      "watermark_score": 100.0,
+      "overall_score": 97.0,
+      "explanation": "The image perfectly matches the search query and prompt, depicting a clean, modern, and professional tech office environment with excellent composition and clarity. The biophilic design elements (indoor trees) further enhance its contemporary feel, making it highly suitable for an 'about us' section or background.",
+      "file_name": "modern_tech_company_office_lobby_reception.jpg",
+      "caption": "A wide-angle view of a bright and spacious modern office lobby or reception area, featuring a sleek, curved silver reception desk at the center. Two artificial trees with vibrant green foliage are integrated into the design, growing through a central planter and extending towards a reflective ceiling cutout that mirrors their form. The space boasts clean lines, minimalist furniture, light-colored flooring, and ample natural light from large windows. A contemporary staircase with metal railings is visible on the right, leading to upper levels, while casual seating areas are arranged throughout the open-plan layout. The overall aesthetic is sophisticated, inviting, and indicative of a forward-thinking corporate environment.",
+      "recommend": true,
+      "error": ""
+    }
+  },
+  {
+    "query": "A clean modern tech office environment for background or about section",
+    "image_info": {
+      "url": "https://homeadore.com/wp-content/uploads/2024/04/001-high-tech-company-designing-a-modern-collaborative-office-space.jpg",
+      "img_format": "JPEG",
+      "mode": "RGB",
+      "file_size": 149641,
+      "width": 1200,
+      "height": 800,
+      "total_pixels": 960000,
+      "basic_score": 0.937872358701915,
+      "file_name": "modern_tech_office_workspace_biophilic_design.jpg"
+    },
+    "llm_score": {
+      "success": true,
+      "relevance_score": 95.0,
+      "clarity_score": 98.0,
+      "watermark_score": 100.0,
+      "overall_score": 95.0,
+      "explanation": "The image is highly relevant to the search query and prompt, showcasing a clean, modern, and inviting tech company office workspace. It features collaborative areas, a biophilic design with a vertical garden and tropical murals, and contemporary furniture, perfectly aligning with the 'modern tech office environment' requirement. The clarity is excellent, and there are no watermarks. The composition is professional and well-lit, making it ideal for a background or 'about us' section.",
+      "file_name": "modern_tech_office_workspace_biophilic_design.jpg",
+      "caption": "A bright and contemporary tech company office interior featuring a tiered seating area with a lush green living wall and tropical-themed murals. The space also includes a comfortable lounge zone with modern sofas and armchairs, and a bright dining or break area with sleek tables and chairs. Curved linear lighting, warm wood accents, and clean finishes define this inviting and collaborative workspace.",
+      "recommend": true,
+      "error": ""
+    }
   }
 ]
