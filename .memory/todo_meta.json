@@ -1,17 +1,10 @@
 {
   "todos": {
     "Coordinator": {
-      "1": {
-        "id": "1",
-        "content": "Create Moksh Dudeja's professional portfolio website",
-        "details": "Build a modern portfolio showcasing AI/ML expertise, web development skills, internships, and education. Include sections: Hero, About, Experience, Skills, Achievements, Education, Contact. Use modern design with dark/tech theme.",
-        "status": "in_progress",
-        "priority": "high"
-      },
       "2": {
         "id": "2",
-        "content": "Deploy and commit portfolio to GitHub",
-        "details": "Create new repository 'mokshdudeja-portfolio' and commit all portfolio files with proper deployment configuration.",
+        "content": "Build Moksh Dudeja professional portfolio website",
+        "details": "1. Get user's design choice (A/B/C)\n2. Research Moksh Dudeja background information\n3. Design and develop portfolio with chosen design system\n4. Create new GitHub repository\n5. Deploy and commit portfolio",
         "status": "pending",
         "priority": "high"
       }
